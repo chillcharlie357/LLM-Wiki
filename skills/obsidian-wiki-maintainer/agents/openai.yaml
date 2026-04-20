@@ -1,0 +1,4 @@
+interface:
+  display_name: "Obsidian Wiki Maintainer"
+  short_description: "Maintain or bootstrap an Obsidian wiki with create, ingest, retrieve, and lint workflows"
+  default_prompt: "Maintain or bootstrap an Obsidian wiki: detect the vault conventions first, then create or update notes, ingest source material into curated pages, retrieve context with qmd or a local wrapper, initialize standard files when missing, and keep navigation, canvas, base, logs, and search indexes synchronized."

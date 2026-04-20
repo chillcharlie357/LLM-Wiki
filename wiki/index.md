@@ -27,6 +27,7 @@ aliases:
 
 - `raw/`：原始资料、截图、PDF、导出内容
 - `wiki/`：整理后的知识页
+- `AGENT.md`：知识库维护规则与 schema
 - `wiki/index.md`：主题入口
 - `wiki/log.md`：迁移与维护日志
 
@@ -37,10 +38,11 @@ aliases:
 - [[wiki/llm/LLM|LLM 目录]]
 - [[wiki/llm/LLM|LLM]]
 - [[wiki/llm/Agent/Agent|Agent]]
-- [[wiki/llm/Agent/Harness Engineering：AI Agent 工程实践指南|Harness Engineering：AI Agent 工程实践指南]]
-- [[wiki/llm/Agent/Harness Engineering × SDD：AI Agent 工程体系完整解读|Harness Engineering × SDD：AI Agent 工程体系完整解读]]
-- [[wiki/llm/Agent/OpenHarness：开源智能体基础设施深入解析|OpenHarness：开源智能体基础设施深入解析]]
-- [[wiki/llm/Agent/OpenClaw vs Claude Code vs Mem0 技术对比|OpenClaw vs Claude Code vs Mem0 技术对比]]
+- [[wiki/llm/Agent/Pi/Pi|Pi]]
+- [[wiki/llm/Agent/Harness/Harness Engineering：AI Agent 工程实践指南|Harness Engineering：AI Agent 工程实践指南]]
+- [[wiki/llm/Agent/Harness/Harness Engineering × SDD：AI Agent 工程体系完整解读|Harness Engineering × SDD：AI Agent 工程体系完整解读]]
+- [[wiki/llm/Agent/Harness/OpenHarness：开源智能体基础设施深入解析|OpenHarness：开源智能体基础设施深入解析]]
+- [[wiki/llm/Agent/Harness/OpenClaw vs Claude Code vs Mem0 技术对比|OpenClaw vs Claude Code vs Mem0 技术对比]]
 - [[wiki/llm/Cuda/1 CUDA 编程基础总结|1 CUDA 编程基础总结]]
 - [[wiki/llm/Cuda/2 NVIDIA GPU 基础数据结构|2 NVIDIA GPU 基础数据结构]]
 - [[wiki/llm/Cuda/3 CUDA 共享内存详解|3 CUDA 共享内存详解]]
@@ -69,12 +71,17 @@ aliases:
 
 ### 基础
 
-- [[wiki/foundations/基础|基础目录]]
 - [[wiki/foundations/计算机网络|计算机网络]]
 
 ## 工作日志
 
 - [[wiki/log|log]]
+
+## 维护约定
+
+- [[Karpathy LLM Wiki|karpathy LLM Wiki]]
+- [[AGENT]]
+- [[qmdw]]
 
 ## 结构化索引
 

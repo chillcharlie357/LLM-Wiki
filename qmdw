@@ -1,0 +1,12 @@
+#!/bin/zsh
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+export XDG_CONFIG_HOME="$ROOT_DIR/.config"
+export XDG_CACHE_HOME="$ROOT_DIR/.cache"
+export QMD_CONFIG_DIR="$ROOT_DIR/.config/qmd"
+export HF_ENDPOINT="${HF_ENDPOINT:-https://hf-mirror.com}"
+export MODEL_ENDPOINT="${MODEL_ENDPOINT:-$HF_ENDPOINT}"
+
+exec qmd "$@"

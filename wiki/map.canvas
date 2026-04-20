@@ -5,7 +5,7 @@
       "type": "group",
       "x": -80,
       "y": -80,
-      "width": 1280,
+      "width": 1500,
       "height": 980,
       "color": "6",
       "label": "LLM"
@@ -40,37 +40,10 @@
       "height": 180
     },
     {
-      "id": "b100000000000002",
-      "type": "file",
-      "file": "wiki/llm/Agent/Agent.md",
-      "x": 380,
-      "y": 40,
-      "width": 280,
-      "height": 180
-    },
-    {
-      "id": "b100000000000003",
-      "type": "file",
-      "file": "wiki/llm/RAG/RAG.md",
-      "x": 720,
-      "y": 40,
-      "width": 280,
-      "height": 180
-    },
-    {
       "id": "b100000000000004",
       "type": "file",
       "file": "wiki/llm/模型训练/Flash Attention.md",
       "x": 40,
-      "y": 300,
-      "width": 280,
-      "height": 180
-    },
-    {
-      "id": "b100000000000005",
-      "type": "file",
-      "file": "wiki/llm/基础概念/tokenizer.md",
-      "x": 380,
       "y": 300,
       "width": 280,
       "height": 180
@@ -130,20 +103,47 @@
       "height": 160
     },
     {
-      "id": "c100000000000002",
-      "type": "file",
-      "file": "wiki/backend/Go.md",
-      "x": 1760,
-      "y": 40,
-      "width": 260,
-      "height": 160
-    },
-    {
       "id": "c100000000000003",
       "type": "file",
       "file": "wiki/backend/Java.md",
       "x": 1440,
       "y": 270,
+      "width": 260,
+      "height": 160
+    },
+    {
+      "id": "b100000000000002",
+      "type": "file",
+      "file": "wiki/llm/Agent/Agent.md",
+      "x": 380,
+      "y": 40,
+      "width": 280,
+      "height": 180
+    },
+    {
+      "id": "b100000000000003",
+      "type": "file",
+      "file": "wiki/llm/RAG/RAG.md",
+      "x": 720,
+      "y": 40,
+      "width": 280,
+      "height": 180
+    },
+    {
+      "id": "b100000000000005",
+      "type": "file",
+      "file": "wiki/llm/基础概念/tokenizer.md",
+      "x": 380,
+      "y": 300,
+      "width": 280,
+      "height": 180
+    },
+    {
+      "id": "c100000000000002",
+      "type": "file",
+      "file": "wiki/backend/Go.md",
+      "x": 1760,
+      "y": 40,
       "width": 260,
       "height": 160
     },
@@ -166,24 +166,6 @@
       "height": 160
     },
     {
-      "id": "d100000000000001",
-      "type": "file",
-      "file": "wiki/foundations/基础.md",
-      "x": 1560,
-      "y": 900,
-      "width": 320,
-      "height": 180
-    },
-    {
-      "id": "d100000000000002",
-      "type": "file",
-      "file": "wiki/foundations/计算机网络.md",
-      "x": 1920,
-      "y": 900,
-      "width": 320,
-      "height": 180
-    },
-    {
       "id": "c100000000000004",
       "type": "file",
       "file": "wiki/backend/Spring/Spring AI.md",
@@ -200,6 +182,24 @@
       "y": 500,
       "width": 260,
       "height": 160
+    },
+    {
+      "id": "d100000000000002",
+      "type": "file",
+      "file": "wiki/foundations/计算机网络.md",
+      "x": 1920,
+      "y": 900,
+      "width": 320,
+      "height": 180
+    },
+    {
+      "id": "b100000000000011",
+      "type": "file",
+      "file": "wiki/llm/Agent/Pi/Pi.md",
+      "x": 1040,
+      "y": 40,
+      "width": 220,
+      "height": 180
     }
   ],
   "edges": [
@@ -311,11 +311,12 @@
       "label": "消息系统"
     },
     {
-      "id": "e100000000000015",
-      "fromNode": "d100000000000001",
+      "id": "e100000000000016",
+      "fromNode": "b100000000000002",
       "fromSide": "right",
-      "toNode": "d100000000000002",
-      "toSide": "left"
+      "toNode": "b100000000000011",
+      "toSide": "left",
+      "label": "极简 coding agent"
     }
   ]
 }
