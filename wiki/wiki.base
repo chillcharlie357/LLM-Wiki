@@ -1,0 +1,133 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.inFolder("wiki")
+formulas:
+  section: if(file.inFolder("wiki/llm"), "LLM", if(file.inFolder("wiki/backend"), "后端", if(file.inFolder("wiki/foundations"), "基础", "其他")))
+properties:
+  formula.section:
+    displayName: Section
+  note_type:
+    displayName: Type
+  area:
+    displayName: Area
+  topic:
+    displayName: Topic
+  collection:
+    displayName: Collection
+  parent_note:
+    displayName: Parent
+  status:
+    displayName: Status
+  source_type:
+    displayName: Source Type
+  migrated_on:
+    displayName: Migrated
+  source:
+    displayName: Source
+  file.folder:
+    displayName: Folder
+  file.mtime:
+    displayName: Updated
+views:
+  - type: table
+    name: All Notes
+    groupBy:
+      property: formula.section
+      direction: ASC
+    order:
+      - note_type
+      - file.name
+      - collection
+      - topic
+      - status
+      - parent_note
+      - file.folder
+      - source_type
+      - file.mtime
+    sort: []
+  - type: table
+    name: LLM
+    filters:
+      and:
+        - file.inFolder("wiki/llm")
+    groupBy:
+      property: collection
+      direction: ASC
+    order:
+      - note_type
+      - topic
+      - status
+      - file.name
+      - parent_note
+      - file.folder
+      - source_type
+      - file.mtime
+  - type: table
+    name: Backend
+    filters:
+      and:
+        - file.inFolder("wiki/backend")
+    groupBy:
+      property: collection
+      direction: ASC
+    order:
+      - note_type
+      - topic
+      - status
+      - file.name
+      - parent_note
+      - file.folder
+      - source_type
+      - file.mtime
+  - type: table
+    name: Foundations
+    filters:
+      and:
+        - file.inFolder("wiki/foundations")
+    order:
+      - note_type
+      - topic
+      - status
+      - file.name
+      - file.folder
+      - source_type
+      - file.mtime
+  - type: table
+    name: Stubs
+    filters:
+      and:
+        - status == "stub"
+    order:
+      - area
+      - collection
+      - file.name
+      - source
+  - type: table
+    name: By Collection
+    filters:
+      and:
+        - note_type != "log"
+    groupBy:
+      property: collection
+      direction: ASC
+    order:
+      - area
+      - note_type
+      - topic
+      - status
+      - file.name
+  - type: cards
+    name: MOCs
+    filters:
+      or:
+        - file.path == "wiki/index.md"
+        - file.path == "wiki/llm/LLM.md"
+        - file.path == "wiki/backend/后端.md"
+        - file.path == "wiki/foundations/基础.md"
+        - file.path == "wiki/llm/RAG/RAG.md"
+        - file.path == "wiki/llm/Agent/Agent.md"
+    order:
+      - file.name
+      - formula.section
+      - file.folder

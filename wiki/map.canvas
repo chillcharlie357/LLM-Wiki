@@ -1,0 +1,321 @@
+{
+  "nodes": [
+    {
+      "id": "a100000000000001",
+      "type": "group",
+      "x": -80,
+      "y": -80,
+      "width": 1280,
+      "height": 980,
+      "color": "6",
+      "label": "LLM"
+    },
+    {
+      "id": "a100000000000002",
+      "type": "group",
+      "x": 1320,
+      "y": -80,
+      "width": 980,
+      "height": 1060,
+      "color": "4",
+      "label": "后端"
+    },
+    {
+      "id": "a100000000000003",
+      "type": "group",
+      "x": 1320,
+      "y": 800,
+      "width": 980,
+      "height": 340,
+      "color": "5",
+      "label": "基础"
+    },
+    {
+      "id": "b100000000000001",
+      "type": "file",
+      "file": "wiki/llm/LLM.md",
+      "x": 40,
+      "y": 40,
+      "width": 280,
+      "height": 180
+    },
+    {
+      "id": "b100000000000002",
+      "type": "file",
+      "file": "wiki/llm/Agent/Agent.md",
+      "x": 380,
+      "y": 40,
+      "width": 280,
+      "height": 180
+    },
+    {
+      "id": "b100000000000003",
+      "type": "file",
+      "file": "wiki/llm/RAG/RAG.md",
+      "x": 720,
+      "y": 40,
+      "width": 280,
+      "height": 180
+    },
+    {
+      "id": "b100000000000004",
+      "type": "file",
+      "file": "wiki/llm/模型训练/Flash Attention.md",
+      "x": 40,
+      "y": 300,
+      "width": 280,
+      "height": 180
+    },
+    {
+      "id": "b100000000000005",
+      "type": "file",
+      "file": "wiki/llm/基础概念/tokenizer.md",
+      "x": 380,
+      "y": 300,
+      "width": 280,
+      "height": 180
+    },
+    {
+      "id": "b100000000000007",
+      "type": "file",
+      "file": "wiki/llm/RAG/RAG 架构总结.md",
+      "x": 40,
+      "y": 560,
+      "width": 260,
+      "height": 150
+    },
+    {
+      "id": "b100000000000008",
+      "type": "file",
+      "file": "wiki/llm/RAG/RAG 系统评估指标.md",
+      "x": 340,
+      "y": 560,
+      "width": 260,
+      "height": 150
+    },
+    {
+      "id": "b100000000000009",
+      "type": "file",
+      "file": "wiki/llm/模型训练/Flash Attention.md",
+      "x": 640,
+      "y": 560,
+      "width": 260,
+      "height": 150
+    },
+    {
+      "id": "b100000000000010",
+      "type": "file",
+      "file": "wiki/llm/模型训练/混合精度训练.md",
+      "x": 940,
+      "y": 560,
+      "width": 260,
+      "height": 150
+    },
+    {
+      "id": "b100000000000006",
+      "type": "file",
+      "file": "wiki/llm/cs336.md",
+      "x": 720,
+      "y": 300,
+      "width": 280,
+      "height": 180
+    },
+    {
+      "id": "c100000000000001",
+      "type": "file",
+      "file": "wiki/backend/后端.md",
+      "x": 1440,
+      "y": 40,
+      "width": 260,
+      "height": 160
+    },
+    {
+      "id": "c100000000000002",
+      "type": "file",
+      "file": "wiki/backend/Go.md",
+      "x": 1760,
+      "y": 40,
+      "width": 260,
+      "height": 160
+    },
+    {
+      "id": "c100000000000003",
+      "type": "file",
+      "file": "wiki/backend/Java.md",
+      "x": 1440,
+      "y": 270,
+      "width": 260,
+      "height": 160
+    },
+    {
+      "id": "c100000000000006",
+      "type": "file",
+      "file": "wiki/backend/消息队列.md",
+      "x": 1440,
+      "y": 500,
+      "width": 260,
+      "height": 160
+    },
+    {
+      "id": "c100000000000007",
+      "type": "file",
+      "file": "wiki/backend/垃圾回收器.md",
+      "x": 1760,
+      "y": 730,
+      "width": 260,
+      "height": 160
+    },
+    {
+      "id": "d100000000000001",
+      "type": "file",
+      "file": "wiki/foundations/基础.md",
+      "x": 1560,
+      "y": 900,
+      "width": 320,
+      "height": 180
+    },
+    {
+      "id": "d100000000000002",
+      "type": "file",
+      "file": "wiki/foundations/计算机网络.md",
+      "x": 1920,
+      "y": 900,
+      "width": 320,
+      "height": 180
+    },
+    {
+      "id": "c100000000000004",
+      "type": "file",
+      "file": "wiki/backend/Spring/Spring AI.md",
+      "x": 1760,
+      "y": 270,
+      "width": 260,
+      "height": 160
+    },
+    {
+      "id": "c100000000000005",
+      "type": "file",
+      "file": "wiki/backend/Redis.md",
+      "x": 1760,
+      "y": 500,
+      "width": 260,
+      "height": 160
+    }
+  ],
+  "edges": [
+    {
+      "id": "e100000000000001",
+      "fromNode": "b100000000000001",
+      "fromSide": "right",
+      "toNode": "b100000000000002",
+      "toSide": "left",
+      "label": "扩展到 Agent"
+    },
+    {
+      "id": "e100000000000002",
+      "fromNode": "b100000000000001",
+      "fromSide": "right",
+      "toNode": "b100000000000003",
+      "toSide": "left",
+      "label": "扩展到 RAG"
+    },
+    {
+      "id": "e100000000000003",
+      "fromNode": "b100000000000001",
+      "fromSide": "bottom",
+      "toNode": "b100000000000004",
+      "toSide": "top",
+      "label": "扩展到训练"
+    },
+    {
+      "id": "e100000000000004",
+      "fromNode": "b100000000000003",
+      "fromSide": "bottom",
+      "toNode": "b100000000000007",
+      "toSide": "top"
+    },
+    {
+      "id": "e100000000000005",
+      "fromNode": "b100000000000003",
+      "fromSide": "bottom",
+      "toNode": "b100000000000008",
+      "toSide": "top"
+    },
+    {
+      "id": "e100000000000006",
+      "fromNode": "b100000000000004",
+      "fromSide": "right",
+      "toNode": "b100000000000009",
+      "toSide": "left"
+    },
+    {
+      "id": "e100000000000007",
+      "fromNode": "b100000000000004",
+      "fromSide": "right",
+      "toNode": "b100000000000010",
+      "toSide": "left"
+    },
+    {
+      "id": "e100000000000008",
+      "fromNode": "c100000000000001",
+      "fromSide": "right",
+      "toNode": "c100000000000002",
+      "toSide": "left",
+      "label": "语言"
+    },
+    {
+      "id": "e100000000000009",
+      "fromNode": "c100000000000001",
+      "fromSide": "bottom",
+      "toNode": "c100000000000003",
+      "toSide": "top",
+      "label": "运行时"
+    },
+    {
+      "id": "e100000000000010",
+      "fromNode": "c100000000000001",
+      "fromSide": "bottom",
+      "toNode": "c100000000000004",
+      "toSide": "top",
+      "label": "框架"
+    },
+    {
+      "id": "e100000000000011",
+      "fromNode": "c100000000000001",
+      "fromSide": "bottom",
+      "toNode": "c100000000000005",
+      "toSide": "top",
+      "label": "中间件"
+    },
+    {
+      "id": "e100000000000012",
+      "fromNode": "c100000000000003",
+      "fromSide": "right",
+      "toNode": "c100000000000004",
+      "toSide": "left",
+      "label": "Java 生态"
+    },
+    {
+      "id": "e100000000000013",
+      "fromNode": "c100000000000003",
+      "fromSide": "bottom",
+      "toNode": "c100000000000007",
+      "toSide": "top"
+    },
+    {
+      "id": "e100000000000014",
+      "fromNode": "c100000000000005",
+      "fromSide": "left",
+      "toNode": "c100000000000006",
+      "toSide": "right",
+      "label": "消息系统"
+    },
+    {
+      "id": "e100000000000015",
+      "fromNode": "d100000000000001",
+      "fromSide": "right",
+      "toNode": "d100000000000002",
+      "toSide": "left"
+    }
+  ]
+}
