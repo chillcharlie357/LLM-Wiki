@@ -1,5 +1,6 @@
 ---
 title: Pi
+summary: "Pi 是 OpenClaw 背后的极简 coding agent，也是一套更偏“代码优先、自我扩展优先”的 agent 设计思路。和很多不断堆工具、堆协议、堆插件市场的 agent 不同，Pi 的核心主张非常克制：先把最小内核做好，再让 agent 通过写代码扩展自己。"
 source: raw/pi-agent/Pi The Minimal Agent Within OpenClaw.md
 source_type: local_raw
 note_type: topic

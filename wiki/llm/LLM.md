@@ -1,5 +1,6 @@
 ---
 title: LLM
+summary: "📚 大语言模型 (Large Language Model) 是基于 Transformer 架构的深度学习模型，通过海量文本数据训练，能够理解、生成和处理自然语言。"
 source: https://www.notion.so/2fb10c9390f180cd89b7e32cf3fb4417
 source_type: notion
 note_type: moc

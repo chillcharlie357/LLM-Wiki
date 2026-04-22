@@ -1,5 +1,6 @@
 ---
 title: Karpathy LLM Wiki
+summary: "这份页面整理自 raw/LLM Wiki.md，核心目标是把“用 LLM 维护个人/团队 wiki”的抽象想法，落成当前仓库可执行的维护方式。"
 source: raw/LLM Wiki.md
 source_type: local_raw
 note_type: guide

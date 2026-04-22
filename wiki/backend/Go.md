@@ -1,5 +1,6 @@
 ---
 title: Go
+summary: "切片截取s1 := s[1:2]会共享底层array，修改和append时要注意:"
 source: https://www.notion.so/2fd10c9390f180d29d56df8b61da4851
 source_type: notion
 note_type: topic

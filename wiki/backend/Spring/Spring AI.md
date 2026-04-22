@@ -1,5 +1,6 @@
 ---
 title: Spring AI
+summary: "Pending summary."
 source: https://www.notion.so/32010c9390f180959f31c76bc7e0dee1
 source_type: notion
 note_type: reference

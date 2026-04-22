@@ -1,5 +1,6 @@
 ---
 title: PYTORCH_DISTRIBUTED_GUIDE
+summary: "深入理解 torch.distributed 在 Nano-vLLM 中的应用"
 source: https://www.notion.so/2fd10c9390f1800aa729fec1753a3078
 source_type: notion
 note_type: reference

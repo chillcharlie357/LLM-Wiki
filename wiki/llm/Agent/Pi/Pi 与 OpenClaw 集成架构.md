@@ -1,5 +1,6 @@
 ---
 title: Pi 与 OpenClaw 集成架构
+summary: "这页关注的不是 Pi 的理念，而是 **OpenClaw 怎样把 Pi 作为嵌入式 agent runtime 接进自己的系统**。"
 source: raw/pi-agent/Pi Integration Architecture.md
 source_type: local_raw
 note_type: reference

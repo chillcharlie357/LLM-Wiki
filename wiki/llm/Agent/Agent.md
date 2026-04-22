@@ -1,5 +1,6 @@
 ---
 title: Agent
+summary: "Skills 是 Agent 的原子能力单元；Tools 是外部 API/服务封装；MCP 是 Anthropic 制定的资源通信协议，统一 Agent 与数据源的连接标准。"
 aliases:
 - Agent面试文档（2026-2-23）
 source: https://www.notion.so/33010c9390f18075bb1cdb54509e3e9f

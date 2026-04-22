@@ -1,5 +1,6 @@
 ---
 title: Redis
+summary: "https://zhuanlan.zhihu.com/p/758609965"
 source: https://www.notion.so/31a10c9390f18066ac87f4ef06447f49
 source_type: notion
 note_type: topic

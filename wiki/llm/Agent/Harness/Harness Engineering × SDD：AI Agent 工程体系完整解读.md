@@ -1,5 +1,6 @@
 ---
 title: Harness Engineering × SDD：AI Agent 工程体系完整解读
+summary: "📌 来源：腾讯云开发者公众号 · 何艺萍 | 两篇文章联合整理 | 2026-04-04"
 source: https://www.notion.so/33810c9390f1816cbf90f84e9ecf9c9a
 source_type: notion
 note_type: reference

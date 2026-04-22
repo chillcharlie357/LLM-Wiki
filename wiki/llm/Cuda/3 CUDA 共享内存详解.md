@@ -1,5 +1,6 @@
 ---
 title: 3 CUDA 共享内存详解
+summary: "基于：CUDA C++ Programming Guide - Shared Memory"
 source: https://www.notion.so/2fd10c9390f181ba8226f1f81e7dbd0e
 source_type: notion
 note_type: reference

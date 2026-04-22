@@ -1,5 +1,6 @@
 ---
 title: RAG 系统评估指标
+summary: "RAG 评估主要从三个维度进行：检索质量、生成质量、端到端评估"
 source: https://www.notion.so/33710c9390f181bab280c149551c9020
 source_type: notion
 note_type: reference

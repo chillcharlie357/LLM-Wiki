@@ -82,6 +82,7 @@ Use this path when the task is to create a new note, theme directory, or local w
 3. Place the note in the most specific existing folder.
 4. Add consistent frontmatter at the top:
    - `title`
+   - `summary`
    - `source` when a raw source exists
    - `source_type`
    - `note_type`
@@ -93,7 +94,8 @@ Use this path when the task is to create a new note, theme directory, or local w
    - `migrated_on`
 5. Add or update the relevant entry in the navigation page if the vault has one.
 6. If the new note changes structure meaningfully, update the `.canvas` and `.base` files when they exist.
-7. Record the change in the maintenance log when the vault has one.
+7. Write a `summary` that explains the page's core topic or takeaway in 1-2 sentences.
+8. Record the change in the maintenance log when the vault has one.
 
 ### 2. Insert Or Update Content
 
@@ -110,8 +112,9 @@ Use this path when the task is to ingest raw material, enrich an existing note, 
    - callouts instead of Notion asides
    - fenced code blocks with languages
    - `$...$` and `$$...$$` for LaTeX
-5. If a file move or merge happens, update all affected wikilinks and `parent_note` values.
-6. Append a concise maintenance entry to the log when one exists.
+5. Refresh `summary` when the page meaning, scope, or conclusion has materially changed.
+6. If a file move or merge happens, update all affected wikilinks and `parent_note` values.
+7. Append a concise maintenance entry to the log when one exists.
 
 ### 3. Retrieve Existing Knowledge
 
@@ -149,6 +152,7 @@ Use this path after structural edits, migrations, or bulk formatting work.
 Check these invariants:
 
 - all Markdown frontmatter parses
+- all curated notes have a non-empty `summary`
 - no broken wikilinks or embeds in curated notes
 - no stale file nodes or dangling edges in `.canvas` files
 - the navigation page matches the current folder structure
@@ -180,6 +184,7 @@ If you move or rename notes, always lint before considering the task complete.
 - Do not create empty parent pages just to mimic Notion nesting.
 - Prefer directory structure over duplicate “jump” notes.
 - Treat the source archive as source material, not as the curated reading layer.
+- Treat `summary` as a required frontmatter field for curated notes.
 - Keep major changes logged when the vault maintains a log.
 - Keep `index.md`, `.canvas`, `.base`, and note links synchronized after structure changes.
 - Prefer durable wiki pages over one-off chat-only summaries.
@@ -187,6 +192,7 @@ If you move or rename notes, always lint before considering the task complete.
 ## Completion Checklist
 
 - target note or folder created/updated
+- summary added or updated
 - navigation updated where needed
 - structural files synchronized if paths changed
 - search index refreshed

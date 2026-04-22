@@ -1,5 +1,6 @@
 ---
 title: NANO_VLLM_GUIDE
+summary: "从原理到实践：深入理解轻量级 LLM 推理引擎"
 source: https://www.notion.so/2fd10c9390f18072a402eef569ca3200
 source_type: notion
 note_type: reference

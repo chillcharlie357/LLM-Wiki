@@ -1,5 +1,6 @@
 ---
 title: RAG 架构总结
+summary: "RAG (Retrieval Augmented Generation, 检索增强生成) 是一种通过结合实时数据检索来增强大语言模型文本生成的技术。"
 source: https://www.notion.so/32110c9390f1814fa0b6face8ab5e8c5
 source_type: notion
 note_type: reference

@@ -1,5 +1,6 @@
 ---
 title: 本地知识库
+summary: "从 Notion 🖥️ 知识库 迁移到本地 Obsidian wiki。"
 source: https://www.notion.so/2fb10c9390f180b79881e9acb61e0749
 source_type: notion
 note_type: home
@@ -53,6 +54,7 @@ aliases:
 - [[wiki/llm/RAG/RAG|RAG]]
 - [[wiki/llm/RAG/RAG 架构总结|RAG 架构总结]]
 - [[wiki/llm/RAG/RAG 系统评估指标|RAG 系统评估指标]]
+- [[wiki/llm/RAG/Vector Graph RAG|Vector Graph RAG]]
 - [[wiki/llm/模型训练/混合精度训练|混合精度训练]]
 - [[wiki/llm/模型训练/Flash Attention|Flash Attention]]
 - [[wiki/llm/基础概念/tokenizer|tokenizer]]

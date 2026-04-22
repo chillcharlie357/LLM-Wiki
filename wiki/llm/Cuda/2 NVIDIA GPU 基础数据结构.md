@@ -1,5 +1,6 @@
 ---
 title: 2 NVIDIA GPU 基础数据结构
+summary: "NVIDIA GPU 以分层方式执行代码，采用 **SIMT（单指令多线程）** 架构。现代 GPU 可以在一个周期内跨数千个数据点运行一条指令，实现高效的并行计算。"
 source: https://www.notion.so/2fd10c9390f181f98130e1cd350d8c9c
 source_type: notion
 note_type: reference

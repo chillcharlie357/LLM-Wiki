@@ -1,5 +1,6 @@
 ---
 title: OpenHarness：开源智能体基础设施深入解析
+summary: "📌 来源：AI 原力注入 · GrissomFI | 发布时间：2026-04-05 | GitHub: github.com/HKUDS/OpenHarness"
 source: https://www.notion.so/33910c9390f181359664f406715cbdb8
 source_type: notion
 note_type: reference

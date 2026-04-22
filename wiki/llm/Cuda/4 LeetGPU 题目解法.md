@@ -1,5 +1,6 @@
 ---
 title: 4 LeetGPU 题目解法
+summary: "题目平台：LeetGPU - CUDA 编程算法练习"
 source: https://www.notion.so/2fd10c9390f181d587c7c445520f23ae
 source_type: notion
 note_type: reference

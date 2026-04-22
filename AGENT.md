@@ -56,10 +56,16 @@
    - 附件和图片优先归档到 `raw/assets/`。
    - 避免让知识页失去原始来源线索。
 
-7. Prefer durable summaries over temporary chat answers
+7. Every note needs a summary
+   - `wiki/` 中的页面应包含 `summary` frontmatter 字段。
+   - `summary` 应优先概括页面核心主题、方法或结论，而不是简单重复标题。
+   - 建议控制在 1-2 句话内，便于在属性视图、检索结果和目录页中快速扫描。
+   - 页面正文发生明显变化时，应同步更新 `summary`，避免属性与正文脱节。
+
+8. Prefer durable summaries over temporary chat answers
    - 有复用价值的分析应写入 wiki，而不是只停留在对话历史。
 
-8. Log every major update
+9. Log every major update
    - 大迁移、大重构、大批量格式清洗、大范围重命名、大规模页面补全，都必须写入 `wiki/log.md`。
 
 ## 标准操作
@@ -74,7 +80,8 @@
 4. 建立或补充 wikilink
 5. 更新 `wiki/index.md`
 6. 如有结构变动，同步更新 `map.canvas` / `wiki.base`
-7. 在 `wiki/log.md` 中追加记录
+7. 补充或更新页面的 `summary`
+8. 在 `wiki/log.md` 中追加记录
 
 ### Query
 
@@ -90,6 +97,7 @@
 定期检查：
 
 - 悬空页面与坏链接
+- 缺失 `summary` 或摘要明显过期的页面
 - 目录变化后遗留的旧路径
 - `map.canvas` 中失效节点
 - `wiki.base` 中过期视图
@@ -128,6 +136,7 @@
 
 - 优先使用 Obsidian 友好的 Markdown
 - frontmatter 尽量保持统一
+- `summary` 视为标准 frontmatter 字段，不应省略
 - 使用目录组织，而不是根目录平铺
 - 避免创建只起跳转作用的重复页
 - 保持标题、目录页、文件树、canvas 结构一致

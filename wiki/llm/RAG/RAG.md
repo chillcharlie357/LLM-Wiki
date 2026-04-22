@@ -1,5 +1,6 @@
 ---
 title: RAG
+summary: "https://zhuanlan.zhihu.com/p/38753080790"
 source: https://www.notion.so/31a10c9390f180e88546d85707e3bf22
 source_type: notion
 note_type: topic

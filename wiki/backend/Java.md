@@ -1,5 +1,6 @@
 ---
 title: Java
+summary: "在 **JVM 加载类的时候**，会为每个类创建一个 vtable。这张表本质上是一个数组，里面存储了该类所有**虚方法**（非 static、非 final、非 private 的方法）的实际入口地址。"
 source: https://www.notion.so/2ff10c9390f180f7a963cff32566c869
 source_type: notion
 note_type: topic

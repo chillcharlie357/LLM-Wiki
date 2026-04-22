@@ -7,6 +7,8 @@ formulas:
 properties:
   formula.section:
     displayName: Section
+  summary:
+    displayName: Summary
   note_type:
     displayName: Type
   area:
@@ -38,6 +40,7 @@ views:
     order:
       - note_type
       - file.name
+      - summary
       - collection
       - topic
       - status
@@ -59,6 +62,7 @@ views:
       - topic
       - status
       - file.name
+      - summary
       - parent_note
       - file.folder
       - source_type
@@ -76,6 +80,7 @@ views:
       - topic
       - status
       - file.name
+      - summary
       - parent_note
       - file.folder
       - source_type
@@ -90,6 +95,7 @@ views:
       - topic
       - status
       - file.name
+      - summary
       - file.folder
       - source_type
       - file.mtime
@@ -102,6 +108,7 @@ views:
       - area
       - collection
       - file.name
+      - summary
       - source
   - type: table
     name: By Collection
@@ -117,6 +124,7 @@ views:
       - topic
       - status
       - file.name
+      - summary
   - type: cards
     name: MOCs
     filters:

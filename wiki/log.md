@@ -1,5 +1,6 @@
 ---
 title: log
+summary: "Pending summary."
 note_type: log
 area: wiki
 topic: log
@@ -54,3 +55,11 @@ tags:
 - 新增 [obsidian-wiki-maintainer](/Users/heleyang/Code/MyWiki/skills/obsidian-wiki-maintainer/SKILL.md) 的全局安装与一键初始化能力：补充 `scripts/install_global.sh` 用于安装到全局 skills 目录，并新增 `scripts/bootstrap_wiki.sh` 用于一键生成新 Obsidian wiki 的标准骨架、`qmdw` 包装脚本和本地 qmd 配置。
 - 调整 `bootstrap_wiki.sh` 的 `AGENT.md` 策略：如果目标项目已存在 `AGENT.md`，不再覆盖，而是在文件尾部追加一个带标记的 Obsidian wiki 维护区块；若该区块已存在，则跳过，避免重复写入。
 - 为 `obsidian-wiki-maintainer` 增加首次使用依赖体检：新增 `scripts/check_dependencies.sh`，在 bootstrap 前检查 `obsidian`、`qmd`、Obsidian 安装版本，以及 macOS/Linux 下的 CLI 注册与 PATH 状态，并引用官方 CLI troubleshooting 作为诊断入口。
+
+## 2026-04-22
+
+- 将 [raw/weixin/Vector Graph RAG 开源！一套向量数据库同时搞定语义检索+RAG多跳.md](/Users/heleyang/Code/MyWiki/raw/weixin/Vector%20Graph%20RAG%20%E5%BC%80%E6%BA%90%EF%BC%81%E4%B8%80%E5%A5%97%E5%90%91%E9%87%8F%E6%95%B0%E6%8D%AE%E5%BA%93%E5%90%8C%E6%97%B6%E6%90%9E%E5%AE%9A%E8%AF%AD%E4%B9%89%E6%A3%80%E7%B4%A2%2BRAG%E5%A4%9A%E8%B7%B3.md) 整理为 [wiki/llm/RAG/Vector Graph RAG.md](/Users/heleyang/Code/MyWiki/wiki/llm/RAG/Vector%20Graph%20RAG.md)，归入 `RAG` 主题目录，并补充到首页导航。
+- 将原文封面图下载到 [raw/assets/weixin/vector-graph-rag/cover.webp](/Users/heleyang/Code/MyWiki/raw/assets/weixin/vector-graph-rag/cover.webp)，同时把 raw 原文中的远程封面改为本地资源引用；其余微信导出中的 1x1 占位图未继续带入整理版页面。
+- 基于手动保存的 HTML 恢复 `Vector Graph RAG` 正文配图：从 HTML 中提取 10 张正文图并归档到 `raw/assets/weixin/vector-graph-rag/`，再按原文顺序替换 raw 原文中的 10 个占位图；整理版页面只保留正文中的信息图，不再使用头图、作者照片和尾部二维码。
+- 为 `wiki/` 下全部笔记补充 `summary` frontmatter 字段，并同步更新 `wiki.base`、skill 模板和 bootstrap 脚本，使新旧笔记的属性 schema 保持一致。
+- 更新 [AGENT.md](/Users/heleyang/Code/MyWiki/AGENT.md) 与 [obsidian-wiki-maintainer](/Users/heleyang/Code/MyWiki/skills/obsidian-wiki-maintainer/SKILL.md) 的维护规则，明确 `summary` 为标准 frontmatter 字段，并要求在新建、更新、lint 时一并维护。

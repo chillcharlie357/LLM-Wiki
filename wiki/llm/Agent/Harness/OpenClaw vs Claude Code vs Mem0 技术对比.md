@@ -1,5 +1,6 @@
 ---
 title: OpenClaw vs Claude Code vs Mem0 技术对比
+summary: "Claude Code 四层记忆：L1 CLAUDE.md（项目级）/ L2 Auto Memory（跨会话）/ L3 Session（当前会话）/ L4 AutoDream（持续思考）"
 source: https://www.notion.so/33b10c9390f1817a89d9f23df8236fa5
 source_type: notion
 note_type: reference

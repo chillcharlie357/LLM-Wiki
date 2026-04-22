@@ -1,5 +1,6 @@
 ---
 title: Harness Engineering：AI Agent 工程实践指南
+summary: "📖 来源：阿里云开发者公众号 | 作者：泮圣伟 | https://mp.weixin.qq.com/s/Et3WwNtEXEgxjaQHrQFDyQ"
 source: https://www.notion.so/33810c9390f18168a2d9f493e8d2504c
 source_type: notion
 note_type: reference

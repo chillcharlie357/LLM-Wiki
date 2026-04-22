@@ -1,5 +1,6 @@
 ---
 title: tokenizer
+summary: "都是**子词（Subword）分词算法**。它们都旨在解决“未登录词（OOV）”问题，但在**合并规则**和**对齐逻辑**上有着本质的区别。"
 source: https://www.notion.so/31b10c9390f18068904ecf585c4d363b
 source_type: notion
 note_type: topic

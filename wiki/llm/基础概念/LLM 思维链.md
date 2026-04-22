@@ -1,5 +1,6 @@
 ---
 title: LLM 思维链
+summary: "LLM 思维链 (Chain of Thought) 是 2025 年大模型面试的核心考点。本文整理了 5 种主流思维链技术及其面试要点。"
 source: https://www.notion.so/32110c9390f1811eac57c8d6dab59dd4
 source_type: notion
 note_type: topic

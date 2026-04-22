@@ -1,5 +1,6 @@
 ---
 title: qmdw
+summary: "qmdw 是当前仓库给 qmd 提供的本地包装脚本，位置在 qmdw。"
 note_type: guide
 area: wiki
 topic: tooling

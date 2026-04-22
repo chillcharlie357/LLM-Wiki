@@ -1,5 +1,6 @@
 ---
 title: index
+summary: Top-level navigation page for the wiki.
 note_type: moc
 area: wiki
 topic: navigation
@@ -24,4 +25,3 @@ tags:
 ## Operations
 
 - [[{{WIKI_ROOT}}/log|Maintenance Log]]
-

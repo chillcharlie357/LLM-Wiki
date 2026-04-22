@@ -1,5 +1,6 @@
 ---
 title: KVCACHE_AND_ATTENTION
+summary: "深入理解 Nano-vLLM 的内存分配策略和注意力架构设计"
 source: https://www.notion.so/2fd10c9390f180ab9861ef7a1190747f
 source_type: notion
 note_type: reference

@@ -1,5 +1,6 @@
 ---
 title: 1 CUDA 编程基础总结
+summary: "基于：CUDA Programming Guide - Programming GPUs in CUDA"
 source: https://www.notion.so/2fd10c9390f181158f92e138768eaf11
 source_type: notion
 note_type: reference

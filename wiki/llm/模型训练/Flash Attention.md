@@ -1,5 +1,6 @@
 ---
 title: Flash Attention
+summary: "GPU **HBM（高带宽显存，容量大但慢）** ，**SRAM（片上缓存，容量小但极快）**"
 source: https://www.notion.so/2fc10c9390f1804aa8a4e9cc3cd02ee8
 source_type: notion
 note_type: topic

@@ -136,6 +136,7 @@ fi
 cat > "$INDEX_FILE" <<EOF
 ---
 title: index
+summary: Top-level navigation page for the wiki.
 note_type: moc
 area: wiki
 topic: navigation
@@ -165,6 +166,7 @@ EOF
 cat > "$LOG_FILE" <<EOF
 ---
 title: log
+summary: Chronological record of major wiki maintenance updates.
 note_type: log
 area: wiki
 topic: log

@@ -15,6 +15,8 @@ This vault is maintained as a local Obsidian wiki.
 - Prefer updating an existing note over creating duplicates.
 - Prefer folders over empty parent pages.
 - Keep frontmatter consistent across notes.
+- Treat `summary` as a required frontmatter field for curated notes.
+- Keep `summary` to 1-2 sentences and update it when the page meaning changes.
 - Use wikilinks for internal references.
 - Keep large structural updates recorded in `{{WIKI_ROOT}}/log.md`.
 - Keep `{{WIKI_ROOT}}/index.md`, `.canvas`, `.base`, and note links synchronized after moves or merges.
@@ -41,4 +43,3 @@ After structural or bulk edits, verify:
 - `.canvas` files do not contain stale nodes or dangling edges
 - `.base` files still match the current structure
 - the search index has been refreshed
-
