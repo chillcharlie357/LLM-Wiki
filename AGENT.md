@@ -124,13 +124,16 @@
 因此在当前仓库中调用 `qmd` 时，优先使用这两个环境变量，避免把本地索引写到用户目录。
 如果是人工在仓库里直接使用，优先调用 `./qmdw`，不要手写环境变量。
 第一次运行 `./qmdw embed` 时会下载 embedding 模型。
+资料发生变更后，优先运行 `./qmdw sync`，不要只跑 `embed`。
+如果 `embed` 遇到 GPU / Metal 初始化失败，优先继续使用 `./qmdw embed` 或 `./qmdw sync` 触发 CPU 重试，不要直接切回裸 `qmd embed`。
 
 建议顺序：
 
 1. 先用 `qmd query` 做混合检索
 2. 需要精确关键词时改用 `qmd search`
 3. 锁定文件后用 `qmd get` 或 `qmd multi-get`
-4. `qmd` 不可用或未初始化时，再退回 `rg` / `find`
+4. 资料新增、删除或批量更新后，用 `./qmdw sync` 刷新索引与向量
+5. `qmd` 不可用或未初始化时，再退回 `rg` / `find`
 
 ## 页面约定
 
@@ -140,6 +143,39 @@
 - 使用目录组织，而不是根目录平铺
 - 避免创建只起跳转作用的重复页
 - 保持标题、目录页、文件树、canvas 结构一致
+
+## Obsidian 技能使用约定
+
+维护本仓库时，优先把 Obsidian 原生结构作为最终验证目标，而不是只保证普通 Markdown 可读。
+
+### `obsidian-markdown`
+
+- 新建或修改 `wiki/**/*.md` 时使用。
+- 内部页面和附件引用优先使用 Obsidian wikilink / embed：`[[note]]`、`[[note|alias]]`、`![[asset.png]]`。
+- 外部网页使用标准 Markdown link；本地 vault 内文件不要长期保留绝对路径链接。
+- Notion aside 应转成 Obsidian callout，代码块必须闭合并尽量标注语言。
+- LaTeX 使用 `$...$` 或 `$$...$$`，不要使用 `\(...\)` / `\[...\]`。
+- `wiki/` 中有正文价值的图片应本地化到 `raw/assets/`，避免阅读层依赖远程图片。
+
+### `obsidian-bases`
+
+- 修改 `wiki/wiki.base` 或新增 `.base` 文件时使用。
+- `.base` 文件必须保持合法 YAML；引用的 frontmatter 属性、formula 和 view filter 必须存在或有明确回退。
+- 页面 schema、目录结构、`status` / `collection` / `summary` 等字段变化后，要同步检查 base views 是否仍然匹配当前文件树。
+- 不要在 base 里保留已删除页面路径。
+
+### `json-canvas`
+
+- 修改 `wiki/map.canvas` 或新增 `.canvas` 文件时使用。
+- canvas 必须是合法 JSON，node / edge id 唯一，所有 edge 都指向存在的 node。
+- file node 的 `file` 必须指向 vault 内存在的文件。
+- 新增重要主题、目录迁移、合并或删除页面后，检查 canvas 是否需要同步增删节点和连线。
+
+### `obsidian-cli`
+
+- 当需要验证 Obsidian 实际渲染、读取当前 vault 内容、检查搜索结果或调试 Obsidian 状态时使用。
+- 常用命令：`obsidian read path='wiki/index.md'`、`obsidian search query='...'`、`obsidian backlinks file='...'`、`obsidian dev:errors`。
+- 如果 CLI 未注册或 Obsidian 未运行，先回退到文件级 lint；依赖问题按官方 CLI troubleshooting 排查。
 
 ## 当前仓库中的特殊约定
 

@@ -1,6 +1,6 @@
 ---
 title: Vector Graph RAG
-summary: "Vector Graph RAG 的核心目标，是在不额外引入图数据库的前提下，把多跳检索能力压回同一套向量数据库里。它的卖点不是“图谱替代向量检索”，而是把实体、关系、段落都存成可检索对象，再靠 ID 引用形成一个逻辑图结构。"
+summary: "更新后的微信 Markdown 原文表明，Vector Graph RAG 的核心目标，是在不额外引入图数据库的前提下，把多跳检索能力压回同一套向量数据库里：实体、关系、段落都存成可检索对象，再靠 ID 引用形成一个逻辑图结构。"
 source: https://mp.weixin.qq.com/s/O_3MS-pHts15Quqwev4MEg
 source_type: weixin
 note_type: reference
@@ -24,6 +24,11 @@ aliases:
 # Vector Graph RAG
 
 Vector Graph RAG 的核心目标，是在不额外引入图数据库的前提下，把多跳检索能力压回同一套向量数据库里。它的卖点不是“图谱替代向量检索”，而是把实体、关系、段落都存成可检索对象，再靠 ID 引用形成一个逻辑图结构。
+
+## 原始来源
+
+- [[raw/weixin/Vector Graph RAG 开源！一套向量数据库同时搞定语义检索+RAG多跳|微信原始整理稿]]
+- 微信原文：<https://mp.weixin.qq.com/s/O_3MS-pHts15Quqwev4MEg>
 
 ## 一句话总结
 
@@ -160,6 +165,7 @@ Vector Graph RAG 用三张逻辑表承载“图”：
 - 它本质上仍然依赖关系抽取质量，抽取差会直接影响扩展质量。
 - “一个向量库搞定一切”成立的前提，是业务更看重多跳检索，而不是复杂图分析。
 - 原文 benchmark 结论是有吸引力的，但仍然需要结合你自己的语料结构做验证，不能直接把公开集成绩映射到生产场景。
+- 这篇更新后的原文是产品导向写法，数字和结论适合当方案线索，不适合直接当生产承诺。
 
 ## 快速上手要点
 

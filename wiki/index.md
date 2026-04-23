@@ -39,6 +39,8 @@ aliases:
 - [[wiki/llm/LLM|LLM 目录]]
 - [[wiki/llm/LLM|LLM]]
 - [[wiki/llm/Agent/Agent|Agent]]
+- [[wiki/llm/Agent/Memory/Agent Memory|Agent Memory]]
+- [[wiki/llm/Agent/Harness/Harness 架构与源码：运行时、联动与模式|Harness 架构与源码：运行时、联动与模式]]
 - [[wiki/llm/Agent/Pi/Pi|Pi]]
 - [[wiki/llm/Agent/Harness/Harness Engineering：AI Agent 工程实践指南|Harness Engineering：AI Agent 工程实践指南]]
 - [[wiki/llm/Agent/Harness/Harness Engineering × SDD：AI Agent 工程体系完整解读|Harness Engineering × SDD：AI Agent 工程体系完整解读]]

@@ -11,8 +11,6 @@ tags:
 ---
 原创 张晨 *2026年4月22日 18:18*
 
-![图片](../assets/weixin/vector-graph-rag/cover.webp)
-
 做 RAG 多跳问答的朋友，应该没有人还没被图数据库PUA 过。
 
 过去，想解决跨段落推理、多跳查询，业内标准答案永远是：知识图谱+ 图数据库。然后开发者需要提取三元组、部署 Neo4j/Neo4j、学 Cypher 查询语言、运维向量库 + 图库两套系统……不仅系统复杂度翻倍，运维成本、学习门槛也双双拉满。
@@ -32,8 +30,6 @@ tags:
 > *「糖尿病的一线用药有哪些需要注意的副作用？」*
 
 这个问题看起来不复杂，但要回答它，系统需要走两步：先知道糖尿病的一线用药是二甲双胍，再去查二甲双胍的副作用是需要监测肾功能。
-
-
 
 ![图片](../assets/weixin/vector-graph-rag/body-01.jpeg)
 
@@ -239,7 +235,7 @@ result = importer.import_sources([    "https://en.wikipedia.org/wiki/Metformin",
 
 [用RAG的思路做agent知识管理，为什么跑不通](https://mp.weixin.qq.com/s?__biz=MzUzMDI5OTA5NQ==&mid=2247512278&idx=1&sn=35e48616e289e41b3ef8d941bd7591e4&scene=21#wechat_redirect)
 
-![图片](../assets/weixin/vector-graph-rag/body-09.jpeg) ![图片](../assets/weixin/vector-graph-rag/body-10.jpeg)
+ 
 
 RAG 与Agent · 目录
 

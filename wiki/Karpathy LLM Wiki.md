@@ -20,7 +20,7 @@ aliases:
 
 # 知识库维护模式
 
-这份页面整理自 [raw/LLM Wiki.md](/Users/heleyang/Code/MyWiki/raw/LLM%20Wiki.md)，核心目标是把“用 LLM 维护个人/团队 wiki”的抽象想法，落成当前仓库可执行的维护方式。
+这份页面整理自 [[raw/LLM Wiki|raw/LLM Wiki.md]]，核心目标是把“用 LLM 维护个人/团队 wiki”的抽象想法，落成当前仓库可执行的维护方式。
 
 ## 核心想法
 
@@ -63,8 +63,8 @@ aliases:
 1. 读取 `raw/` 中的新资料
 2. 提炼要点，决定应该更新哪些现有页面
 3. 必要时创建新的主题页、对比页或总结页
-4. 更新 [index.md](/Users/heleyang/Code/MyWiki/wiki/index.md) 中的入口
-5. 追加 [log.md](/Users/heleyang/Code/MyWiki/wiki/log.md) 记录这次变更
+4. 更新 [[wiki/index|index.md]] 中的入口
+5. 追加 [[wiki/log|log.md]] 记录这次变更
 
 一个来源不一定只落到一页，理想状态是一次 ingest 会同步更新多个相关页面。
 
@@ -91,7 +91,7 @@ aliases:
 
 ### index.md
 
-[index.md](/Users/heleyang/Code/MyWiki/wiki/index.md) 是内容入口，应该优先回答“知识库里有什么”。
+[[wiki/index|index.md]] 是内容入口，应该优先回答“知识库里有什么”。
 
 - 按主题组织入口
 - 指向可读页面，而不是原始导出页
@@ -99,7 +99,7 @@ aliases:
 
 ### log.md
 
-[log.md](/Users/heleyang/Code/MyWiki/wiki/log.md) 是时间线，应该回答“最近做了什么”。
+[[wiki/log|log.md]] 是时间线，应该回答“最近做了什么”。
 
 - 每次大迁移、大重构、大批量清洗都要追加
 - 记录变更内容、验证结果和剩余缺口
@@ -131,7 +131,7 @@ aliases:
 - `./qmdw ...`
 
 它会自动把 `qmd` 的 config 和 cache 固定到仓库内的 `.config/`、`.cache/`，避免每次手动写环境变量。
-更具体的仓库内用法见 [qmdw](/Users/heleyang/Code/MyWiki/wiki/qmdw.md)。
+更具体的仓库内用法见 [[wiki/qmdw]]。
 
 这和原始 `LLM Wiki` 思路里提到的“随着规模增长，需要更强的本地搜索工具”是一致的。对当前仓库来说，`index.md` 仍然是主题导航入口，而 `qmd` 负责更快地在 `wiki/` 与 `raw/` 中定位相关页面与原始资料。
 
@@ -155,4 +155,4 @@ aliases:
 
 ## 对应规则
 
-这份页面偏解释性；真正用于约束后续维护动作的规则，见根目录 [AGENT.md](/Users/heleyang/Code/MyWiki/AGENT.md)。
+这份页面偏解释性；真正用于约束后续维护动作的规则，见根目录 [[AGENT|AGENT.md]]。

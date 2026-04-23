@@ -68,6 +68,24 @@ views:
       - source_type
       - file.mtime
   - type: table
+    name: Agent
+    filters:
+      and:
+        - file.inFolder("wiki/llm/Agent")
+    groupBy:
+      property: collection
+      direction: ASC
+    order:
+      - note_type
+      - topic
+      - status
+      - file.name
+      - summary
+      - parent_note
+      - file.folder
+      - source_type
+      - file.mtime
+  - type: table
     name: Backend
     filters:
       and:
@@ -132,7 +150,6 @@ views:
         - file.path == "wiki/index.md"
         - file.path == "wiki/llm/LLM.md"
         - file.path == "wiki/backend/后端.md"
-        - file.path == "wiki/foundations/基础.md"
         - file.path == "wiki/llm/RAG/RAG.md"
         - file.path == "wiki/llm/Agent/Agent.md"
     order:

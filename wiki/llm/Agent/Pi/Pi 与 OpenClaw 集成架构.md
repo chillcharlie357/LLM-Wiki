@@ -225,5 +225,5 @@ OpenClaw 并没有把 provider / model / auth 固定死，而是自己维护：
 
 ## 参考来源
 
-- [raw/pi-agent/Pi Integration Architecture.md](/Users/heleyang/Code/MyWiki/raw/pi-agent/Pi%20Integration%20Architecture.md)
+- [[raw/pi-agent/Pi Integration Architecture|raw/pi-agent/Pi Integration Architecture.md]]
 - [raw/pi-agent/badlogicpi-mono AI agent toolkit coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods.md](</Users/heleyang/Code/MyWiki/raw/pi-agent/badlogicpi-mono AI agent toolkit coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods.md>)

@@ -21,7 +21,8 @@
 		{"id":"c100000000000004","type":"file","file":"wiki/backend/Spring/Spring AI.md","x":1760,"y":270,"width":260,"height":160},
 		{"id":"c100000000000005","type":"file","file":"wiki/backend/Redis.md","x":1760,"y":500,"width":260,"height":160},
 		{"id":"d100000000000002","type":"file","file":"wiki/foundations/计算机网络.md","x":1920,"y":900,"width":320,"height":180},
-		{"id":"b100000000000011","type":"file","file":"wiki/llm/Agent/Pi/Pi.md","x":1040,"y":40,"width":220,"height":180}
+		{"id":"b100000000000011","type":"file","file":"wiki/llm/Agent/Pi/Pi.md","x":1040,"y":40,"width":220,"height":180},
+		{"id":"b100000000000012","type":"file","file":"wiki/llm/Agent/Memory/Agent Memory.md","x":1040,"y":300,"width":260,"height":180}
 	],
 	"edges":[
 		{"id":"e100000000000001","fromNode":"b100000000000001","fromSide":"right","toNode":"b100000000000002","toSide":"left","label":"扩展到 Agent"},
@@ -38,6 +39,7 @@
 		{"id":"e100000000000012","fromNode":"c100000000000003","fromSide":"right","toNode":"c100000000000004","toSide":"left","label":"Java 生态"},
 		{"id":"e100000000000013","fromNode":"c100000000000003","fromSide":"bottom","toNode":"c100000000000007","toSide":"top"},
 		{"id":"e100000000000014","fromNode":"c100000000000005","fromSide":"left","toNode":"c100000000000006","toSide":"right","label":"消息系统"},
-		{"id":"e100000000000016","fromNode":"b100000000000002","fromSide":"right","toNode":"b100000000000011","toSide":"left","label":"极简 coding agent"}
+		{"id":"e100000000000016","fromNode":"b100000000000002","fromSide":"right","toNode":"b100000000000011","toSide":"left","label":"极简 coding agent"},
+		{"id":"e100000000000017","fromNode":"b100000000000002","fromSide":"right","toNode":"b100000000000012","toSide":"left","label":"长期记忆"}
 	]
 }

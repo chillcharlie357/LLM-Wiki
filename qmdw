@@ -9,4 +9,47 @@ export QMD_CONFIG_DIR="$ROOT_DIR/.config/qmd"
 export HF_ENDPOINT="${HF_ENDPOINT:-https://hf-mirror.com}"
 export MODEL_ENDPOINT="${MODEL_ENDPOINT:-$HF_ENDPOINT}"
 
+run_embed() {
+  if [[ -n "${QMD_LLAMA_GPU:-}" ]]; then
+    qmd embed "$@"
+    return
+  fi
+
+  local embed_log
+  embed_log="$(mktemp "${TMPDIR:-/tmp}/qmd-embed.XXXXXX")"
+
+  if qmd embed "$@" 2> >(tee "$embed_log" >&2); then
+    rm -f "$embed_log"
+    return
+  fi
+
+  if rg -q "ggml_metal_init|ggml_backend_metal|Failed to create any embedding context|failed to initialize.*backend|Metal" "$embed_log"; then
+    echo "qmdw: embed failed with GPU backend, retrying on CPU via QMD_LLAMA_GPU=off" >&2
+    QMD_LLAMA_GPU=off qmd embed "$@"
+    rm -f "$embed_log"
+    return
+  fi
+
+  rm -f "$embed_log"
+  return 1
+}
+
+if [[ "${1:-}" == "sync" ]]; then
+  shift || true
+  if [[ $# -gt 0 ]]; then
+    echo "Usage: ./qmdw sync" >&2
+    exit 1
+  fi
+
+  qmd update
+  run_embed
+  exit 0
+fi
+
+if [[ "${1:-}" == "embed" ]]; then
+  shift || true
+  run_embed "$@"
+  exit 0
+fi
+
 exec qmd "$@"

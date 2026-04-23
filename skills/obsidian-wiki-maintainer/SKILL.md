@@ -16,6 +16,11 @@ This skill assumes these tools are available:
 - `obsidian` CLI for reading, creating, searching, and validating vault content
 - `qmd` for local full-text and vector-backed retrieval
 - optional `./qmdw` wrapper to keep `qmd` config and cache local to the vault
+- Codex skills for Obsidian-native work:
+  - `obsidian-markdown` for Obsidian-flavored Markdown, wikilinks, embeds, callouts, properties, LaTeX, and Mermaid
+  - `obsidian-bases` for `.base` files and structured note views
+  - `json-canvas` for `.canvas` maps, nodes, edges, groups, and file references
+  - `obsidian-cli` for reading/searching the running vault and checking Obsidian-side behavior
 
 If `obsidian` or `qmd` is missing, install or configure them before relying on the retrieve or lint workflow.
 On first use, verify the Obsidian installer version, CLI registration, and terminal PATH setup using the official [Obsidian CLI troubleshooting guide](https://obsidian.md/help/cli#Troubleshooting).
@@ -109,12 +114,23 @@ Use this path when the task is to ingest raw material, enrich an existing note, 
    - do not rewrite the source archive into a curated reading layer
 4. Convert content into Obsidian-friendly Markdown:
    - wikilinks for internal notes
+   - embeds for local images, PDFs, and note sections
    - callouts instead of Notion asides
    - fenced code blocks with languages
    - `$...$` and `$$...$$` for LaTeX
+   - Mermaid fences for durable diagrams
 5. Refresh `summary` when the page meaning, scope, or conclusion has materially changed.
 6. If a file move or merge happens, update all affected wikilinks and `parent_note` values.
 7. Append a concise maintenance entry to the log when one exists.
+
+### Obsidian-Native Surfaces
+
+Use the dedicated Obsidian skills when the task touches their surface area:
+
+- Use `obsidian-markdown` for every curated note edit and lint pass. Prefer wikilinks for vault-local references, Obsidian embeds for local attachments, callouts for highlighted blocks, and `$...$` / `$$...$$` for math. Do not leave valuable reading-layer images as remote embeds; mirror them into the source archive's assets folder.
+- Use `obsidian-bases` when editing `.base` files. Validate YAML, formulas, filters, and view property names. Remove stale `file.path` filters after pages are deleted or moved.
+- Use `json-canvas` when editing `.canvas` files. Validate JSON, unique IDs, edge endpoints, group layout, and existence of every file node.
+- Use `obsidian-cli` when exact vault behavior matters. Prefer `obsidian read`, `obsidian search`, `obsidian backlinks`, and `obsidian dev:errors` when Obsidian is running; if the CLI is unavailable, report the fallback file-level checks.
 
 ### 3. Retrieve Existing Knowledge
 
@@ -154,6 +170,9 @@ Check these invariants:
 - all Markdown frontmatter parses
 - all curated notes have a non-empty `summary`
 - no broken wikilinks or embeds in curated notes
+- no unlocalized remote images remain in the curated reading layer unless intentionally documented
+- no legacy LaTeX delimiters `\(...\)` / `\[...\]` remain outside code spans
+- no unclosed fenced code blocks remain
 - no stale file nodes or dangling edges in `.canvas` files
 - the navigation page matches the current folder structure
 - `.base` files are still valid after moves or renames
@@ -195,6 +214,7 @@ If you move or rename notes, always lint before considering the task complete.
 - summary added or updated
 - navigation updated where needed
 - structural files synchronized if paths changed
+- markdown, base, canvas, and optional Obsidian CLI checks completed
 - search index refreshed
 - embeddings refreshed when hashes changed
 - maintenance log updated for substantial work when present
