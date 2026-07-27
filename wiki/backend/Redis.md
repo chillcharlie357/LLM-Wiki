@@ -1,6 +1,6 @@
 ---
 title: Redis
-summary: "https://zhuanlan.zhihu.com/p/758609965"
+summary: "Redis 可用 List、Pub/Sub 或 Stream 承载不同可靠性要求的消息场景；其中 Stream 原生提供消费者组、ACK、持久化与消息回溯，而 Pub/Sub 更适合无需补偿的实时广播。"
 source: https://www.notion.so/31a10c9390f18066ac87f4ef06447f49
 source_type: notion
 note_type: topic
@@ -110,5 +110,4 @@ Redis 的 Pub/Sub（发布/订阅）是一个经典的 **观察者模式** 实�
 
 - **实时性与非持久化**：Redis 的 Pub/Sub 是“发后既忘”（Fire and Forget）。如果客户端在消息发布时掉线，它**无法**找回错过的消息。消息不会被持久化到磁盘。
 - **内存压力**：如果订阅者消费速度慢，消息会在输出缓冲区堆积，可能导致 Redis 内存飙升甚至强制断开客户端连接。
-
 
