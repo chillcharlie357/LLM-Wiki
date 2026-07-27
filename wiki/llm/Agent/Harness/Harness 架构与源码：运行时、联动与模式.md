@@ -6,7 +6,7 @@ aliases:
 - Harness 架构 与 LangChain、LangGraph 三者联动 的底层逻辑
 - DeerFlow 架构：14层Middleware 架构深度解析
 - Harness Agent 穿透式解读
-source: file:///Users/heleyang/Code/MyWiki/raw/weixin/Harness%20%E6%9E%B6%E6%9E%84%E4%B8%8E%E6%BA%90%E7%A0%81
+source: "raw/weixin/Harness 架构与源码/"
 source_type: weixin
 note_type: reference
 area: llm
