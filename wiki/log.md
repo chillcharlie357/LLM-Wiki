@@ -76,3 +76,7 @@ tags:
 - 修复 [[qmdw]] 在 macOS 下 `mktemp` 模板带后缀导致 `./qmdw sync` 中断的问题，并重新执行 `./qmdw sync`：`wiki` / `raw` 索引已更新，新增 5 个文档哈希对应的 56 个 chunks 已完成 embedding。
 - 更新 [[AGENT|AGENT.md]] 与 [[skills/obsidian-wiki-maintainer/SKILL|obsidian-wiki-maintainer]]，明确 `obsidian-markdown`、`obsidian-bases`、`obsidian-cli`、`json-canvas` 四类 Obsidian 技能的使用边界；同步修正 [[wiki/wiki.base]] 中已删除的基础 MOC 路径，并把 [[wiki/llm/Agent/Memory/Agent Memory]] 加入 [[wiki/map.canvas]]。
 - 执行 `obsidian-markdown` lint 后，将 [[wiki/llm/RAG/RAG 架构总结]] 与 [[wiki/llm/基础概念/LLM 思维链]] 中的 14 个远程正文图片下载到 `raw/assets/web/`，并改写为 Obsidian 本地 embed；随后运行 `./qmdw sync`，刷新 7 篇更新文档并完成 24 个 chunks 的 embedding。
+
+## 2026-07-27
+
+- 19:52 CST 知识库巡检：将 [[wiki/backend/Spring/Spring AI|Spring AI]]、[[wiki/foundations/计算机网络|计算机网络]] 的占位摘要，以及 [[wiki/llm/RAG/RAG|RAG]]、[[wiki/backend/Redis|Redis]]、[[wiki/backend/垃圾回收器|垃圾回收器]] 的来源 URL 摘要替换为与正文范围一致的主题摘要；复查 frontmatter、wikilink、代码围栏、canvas 与 base，未发现悬空链接或结构失效。
