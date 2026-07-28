@@ -241,6 +241,6 @@ Pi 值得记录，不只是因为 OpenClaw 用了它，而是它代表了一种�
 
 - [[raw/pi-agent/Pi The Minimal Agent Within OpenClaw|raw/pi-agent/Pi The Minimal Agent Within OpenClaw.md]]
 - [[raw/pi-agent/Pi Integration Architecture|raw/pi-agent/Pi Integration Architecture.md]]
-- [raw/pi-agent/badlogicpi-mono AI agent toolkit coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods.md](</Users/heleyang/Code/MyWiki/raw/pi-agent/badlogicpi-mono AI agent toolkit coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods.md>)
-- [raw/pi-agent/Pi：OpenClaw 背后的极简 Agent 哲学.md](</Users/heleyang/Code/MyWiki/raw/pi-agent/Pi：OpenClaw 背后的极简 Agent 哲学.md>)
-- [raw/pi-agent/Pi：OpenClaw 背后的极简编程代理（Agent）.md](</Users/heleyang/Code/MyWiki/raw/pi-agent/Pi：OpenClaw 背后的极简编程代理（Agent）.md>)
+- [[raw/pi-agent/badlogicpi-mono AI agent toolkit coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods|badlogic/pi-mono 项目说明]]
+- [[raw/pi-agent/Pi：OpenClaw 背后的极简 Agent 哲学|Pi：OpenClaw 背后的极简 Agent 哲学]]
+- [[raw/pi-agent/Pi：OpenClaw 背后的极简编程代理（Agent）|Pi：OpenClaw 背后的极简编程代理（Agent）]]

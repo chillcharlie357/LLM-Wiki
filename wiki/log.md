@@ -98,3 +98,7 @@ tags:
 - 将微信原文 [[raw/weixin/字节面试题：Agent 里的 Skill 到底怎么做才算高质量？]] ingest 为 [[wiki/llm/Agent/Agent Skill 设计与质量保障]]：整理 Skill 与 Prompt/Tool 的边界、Skill 化筛选条件、路由与执行四层结构、风险分级、渐进披露、反模式、验证闭环、评测指标和面试回答框架，并同步更新 Agent、LLM、首页与知识地图导航。
 - 19:52 CST 知识库巡检：将 [[wiki/backend/Spring/Spring AI|Spring AI]]、[[wiki/foundations/计算机网络|计算机网络]] 的占位摘要，以及 [[wiki/llm/RAG/RAG|RAG]]、[[wiki/backend/Redis|Redis]]、[[wiki/backend/垃圾回收器|垃圾回收器]] 的来源 URL 摘要替换为与正文范围一致的主题摘要；复查 frontmatter、wikilink、代码围栏、canvas 与 base，未发现悬空链接或结构失效。
 - 将微信原文 [[raw/weixin/面试官：RAG 项目做了哪些优化，效果怎么样？]] ingest 为 [[wiki/llm/RAG/RAG 项目优化与面试回答框架]]：把业务缺口、端到端链路、选型取舍、Top-K 证据诊断、单变量实验、三层指标和责任边界整理为可复用的方法论；本地化三张正文信息图，并同步更新 RAG、LLM、首页与知识地图导航。
+
+## 2026-07-29
+
+- 知识库巡检：将 [[wiki/llm/Agent/Pi/Pi|Pi]] 中 3 个机器相关的绝对来源链接改为 vault 内 wikilink，并把 [[wiki/qmdw|qmdw]] 的索引位置改为仓库相对路径；复查 frontmatter、wikilink、代码围栏、canvas、base 与 qmd 索引。
