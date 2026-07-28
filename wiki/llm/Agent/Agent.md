@@ -1,6 +1,6 @@
 ---
 title: Agent
-summary: "Skills 是 Agent 的原子能力单元；Tools 是外部 API/服务封装；MCP 是 Anthropic 制定的资源通信协议，统一 Agent 与数据源的连接标准。"
+summary: "Agent 以 LLM 为推理核心，通过规划、记忆、工具和反馈循环执行多步骤任务；Skill 进一步把一类任务的专家判断、工作流、资源与验证机制沉淀为可复用能力。"
 aliases:
 - Agent面试文档（2026-2-23）
 source: https://www.notion.so/33010c9390f18075bb1cdb54509e3e9f
@@ -25,13 +25,14 @@ tags:
 ## 概念整理（面试经常问）
 ### Skills, Tools, MCP
 
-Skills 是 Agent 的原子能力单元；Tools 是外部 API/服务封装；MCP 是 Anthropic 制定的资源通信协议，统一 Agent 与数据源的连接标准。
+Skills 沉淀一类任务的专家判断、工作流与验证方法；Tools 封装可执行的外部操作；MCP 统一 Agent 与工具或资源之间的连接方式。
 
 #### Skills (技能)
 
-- 原子能力单元，有明确输入输出
-- 示例：搜索、计算、代码执行、文件操作
-- 被 LLM 发现和调用
+- 可发现、可复用的专家能力包，包含触发边界、决策规则、资源和验证闭环
+- 可以编排一个或多个 Tool，但不等同于 Tool
+- 质量不仅取决于单次输出，还取决于路由准确性、跨会话稳定性与风险控制
+- 详细设计见 [[wiki/llm/Agent/Agent Skill 设计与质量保障|Agent Skill 设计与质量保障]]
 
 #### Tools (工具)
 
@@ -88,9 +89,15 @@ LLM 是大语言模型，负责理解和生成文本；Agent 是由 LLM 驱动�
 
 [[wiki/llm/Agent/Pi/Pi|Pi]]
 
+[[wiki/llm/Agent/Pi/Pi SDK|Pi SDK]]
+
 [[wiki/llm/Agent/Pi/Pi 与 OpenClaw 集成架构|Pi 与 OpenClaw 集成架构]]
 
 [[wiki/llm/Agent/Harness/Harness 架构与源码：运行时、联动与模式|Harness 架构与源码：运行时、联动与模式]]
+
+[[wiki/llm/Agent/Agent 业务理解与意图识别|Agent 业务理解与意图识别]]
+
+[[wiki/llm/Agent/Agent Skill 设计与质量保障|Agent Skill 设计与质量保障]]
 
 ---
 

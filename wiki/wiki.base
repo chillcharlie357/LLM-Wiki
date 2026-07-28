@@ -48,7 +48,9 @@ views:
       - file.folder
       - source_type
       - file.mtime
-    sort: []
+    sort:
+      - property: file.mtime
+        direction: DESC
   - type: table
     name: LLM
     filters:

@@ -28,6 +28,8 @@ tags:
 
 [[wiki/llm/RAG/RAG|RAG]]
 
+[[wiki/llm/RAG/RAG 项目优化与面试回答框架|RAG 项目优化与面试回答框架]]
+
 [[wiki/llm/基础概念/tokenizer|tokenizer]]
 
 - [输入密码 · 语雀](https://www.yuque.com/snailclimb/itdq8h?#) 《SpringAI 智能面试平台+RAG知识库》 🔑 密码：wx81
@@ -37,6 +39,12 @@ tags:
 [[wiki/llm/cs336|cs336]]
 
 [[wiki/llm/Agent/Agent|Agent]]
+
+[[wiki/llm/Agent/Agent 业务理解与意图识别|Agent 业务理解与意图识别]]
+
+[[wiki/llm/Agent/Agent Skill 设计与质量保障|Agent Skill 设计与质量保障]]
+
+[[wiki/llm/模型/DeepSeek V4|DeepSeek V4]]
 
 ---
 
