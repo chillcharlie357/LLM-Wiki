@@ -69,14 +69,14 @@ September 11th chart visualization Twin Towers attack
 
 ## 搜索范式演进
 
-| 阶段 | 主导范式 | 记忆视角 |
-| --- | --- | --- |
-| 2009 | Lucene、BM25、TF-IDF、信息抽取、主题模型 | 记忆是倒排索引和文本统计 |
-| 2015 | 深度学习、向量检索、Faiss / Milvus / Elasticsearch | 记忆是向量空间里的语义相似性 |
-| 2018 | Transformer / BERT | 记忆开始进入模型表征 |
-| 2022 | ChatGPT / RAG | 生成和搜索结合，外部知识变成上下文 |
-| 2025 | Deep Research | Search / Read / Reason 形成循环 |
-| 2026 | Agent Memory | 搜索、状态、偏好、历史和遗忘合成长期记忆系统 |
+| 阶段   | 主导范式                                     | 记忆视角                        |
+| ---- | ---------------------------------------- | --------------------------- |
+| 2009 | Lucene、BM25、TF-IDF、信息抽取、主题模型             | 记忆是倒排索引和文本统计                |
+| 2015 | 深度学习、向量检索、Faiss / Milvus / Elasticsearch | 记忆是向量空间里的语义相似性              |
+| 2018 | Transformer / BERT                       | 记忆开始进入模型表征                  |
+| 2022 | ChatGPT / RAG                            | 生成和搜索结合，外部知识变成上下文           |
+| 2025 | Deep Research                            | Search / Read / Reason 形成循环 |
+| 2026 | Agent Memory                             | 搜索、状态、偏好、历史和遗忘合成长期记忆系统      |
 
 ## 记忆表示优先于数据库选型
 

@@ -39,9 +39,12 @@ aliases:
 - [[wiki/llm/LLM|LLM 目录]]
 - [[wiki/llm/LLM|LLM]]
 - [[wiki/llm/Agent/Agent|Agent]]
+- [[wiki/llm/Agent/Agent 业务理解与意图识别|Agent 业务理解与意图识别]]
+- [[wiki/llm/Agent/Agent Skill 设计与质量保障|Agent Skill 设计与质量保障]]
 - [[wiki/llm/Agent/Memory/Agent Memory|Agent Memory]]
 - [[wiki/llm/Agent/Harness/Harness 架构与源码：运行时、联动与模式|Harness 架构与源码：运行时、联动与模式]]
 - [[wiki/llm/Agent/Pi/Pi|Pi]]
+- [[wiki/llm/Agent/Pi/Pi SDK|Pi SDK]]
 - [[wiki/llm/Agent/Harness/Harness Engineering：AI Agent 工程实践指南|Harness Engineering：AI Agent 工程实践指南]]
 - [[wiki/llm/Agent/Harness/Harness Engineering × SDD：AI Agent 工程体系完整解读|Harness Engineering × SDD：AI Agent 工程体系完整解读]]
 - [[wiki/llm/Agent/Harness/OpenHarness：开源智能体基础设施深入解析|OpenHarness：开源智能体基础设施深入解析]]
@@ -53,7 +56,9 @@ aliases:
 - [[wiki/llm/Nano-vllm/NANO_VLLM_GUIDE|NANO_VLLM_GUIDE]]
 - [[wiki/llm/Nano-vllm/KVCACHE_AND_ATTENTION|KVCACHE_AND_ATTENTION]]
 - [[wiki/llm/Nano-vllm/PYTORCH_DISTRIBUTED_GUIDE|PYTORCH_DISTRIBUTED_GUIDE]]
+- [[wiki/llm/模型/DeepSeek V4|DeepSeek V4]]
 - [[wiki/llm/RAG/RAG|RAG]]
+- [[wiki/llm/RAG/RAG 项目优化与面试回答框架|RAG 项目优化与面试回答框架]]
 - [[wiki/llm/RAG/RAG 架构总结|RAG 架构总结]]
 - [[wiki/llm/RAG/RAG 系统评估指标|RAG 系统评估指标]]
 - [[wiki/llm/RAG/Vector Graph RAG|Vector Graph RAG]]
@@ -72,6 +77,7 @@ aliases:
 - [[wiki/backend/Redis|Redis]]
 - [[wiki/backend/消息队列|消息队列]]
 - [[wiki/backend/垃圾回收器|垃圾回收器]]
+- [[wiki/backend/十亿用户 SSO 系统设计|十亿用户 SSO 系统设计]]
 
 ### 基础
 

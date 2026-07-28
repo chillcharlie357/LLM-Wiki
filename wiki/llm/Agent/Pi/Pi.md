@@ -232,6 +232,7 @@ Pi 值得记录，不只是因为 OpenClaw 用了它，而是它代表了一种�
 
 ## 延伸阅读
 
+- [[wiki/llm/Agent/Pi/Pi SDK|Pi SDK]]
 - [[wiki/llm/Agent/Pi/Pi 与 OpenClaw 集成架构|Pi 与 OpenClaw 集成架构]]
 - [[wiki/llm/Agent/Harness/OpenHarness：开源智能体基础设施深入解析|OpenHarness：开源智能体基础设施深入解析]]
 - [[wiki/llm/Agent/Harness/OpenClaw vs Claude Code vs Mem0 技术对比|OpenClaw vs Claude Code vs Mem0 技术对比]]

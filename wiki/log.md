@@ -76,7 +76,25 @@ tags:
 - 修复 [[qmdw]] 在 macOS 下 `mktemp` 模板带后缀导致 `./qmdw sync` 中断的问题，并重新执行 `./qmdw sync`：`wiki` / `raw` 索引已更新，新增 5 个文档哈希对应的 56 个 chunks 已完成 embedding。
 - 更新 [[AGENT|AGENT.md]] 与 [[skills/obsidian-wiki-maintainer/SKILL|obsidian-wiki-maintainer]]，明确 `obsidian-markdown`、`obsidian-bases`、`obsidian-cli`、`json-canvas` 四类 Obsidian 技能的使用边界；同步修正 [[wiki/wiki.base]] 中已删除的基础 MOC 路径，并把 [[wiki/llm/Agent/Memory/Agent Memory]] 加入 [[wiki/map.canvas]]。
 - 执行 `obsidian-markdown` lint 后，将 [[wiki/llm/RAG/RAG 架构总结]] 与 [[wiki/llm/基础概念/LLM 思维链]] 中的 14 个远程正文图片下载到 `raw/assets/web/`，并改写为 Obsidian 本地 embed；随后运行 `./qmdw sync`，刷新 7 篇更新文档并完成 24 个 chunks 的 embedding。
+- 新增 [[wiki/llm/Agent/Pi/Pi SDK]]，基于官方 `pi-coding-agent` SDK、examples、extensions、packages 文档和本地 OpenClaw 集成材料，整理 `createAgentSession()`、`AgentSessionRuntime`、`DefaultResourceLoader`、tools、skills、extensions、session 管理和 OpenClaw 式 SDK 嵌入路线；同步更新 Pi 入口、Agent 入口、首页与 canvas，并通过 `./qmdw sync` 刷新新增页面和 58 个 embedding chunks。
+
+## 2026-04-26
+
+- 归档 DeepSeek V4 技术报告 PDF 到 [[raw/assets/papers/deepseek/DeepSeek_V4.pdf]]，并将 DeepSeek 官方 2026-04-24 新闻页保存为 `raw/web/deepseek/news260424.html` 与可读 Markdown [[raw/web/deepseek/news260424|news260424.md]]。
+- 新增 [[wiki/llm/模型/DeepSeek V4]]，整理 V4-Pro / V4-Flash 的模型定位、1M 上下文、CSA/HCA、mHC、Muon、Agent 优化与 API 迁移注意事项，并同步加入首页与 LLM 目录。
+
+## 2026-07-25
+
+- 将微信原文 [[raw/weixin/腾讯三面挂了：如何设计一个支撑十亿用户的 SSO 系统？]] 整理为 [[wiki/backend/十亿用户 SSO 系统设计]]：本地化两张原文架构图，补充跨域/OIDC 时序、令牌分层、Refresh Token 轮换、撤销与登出、高可用和面试答题框架，并依据 OIDC Core、RFC 9700、RFC 8725 与 Back-Channel Logout 规范校正原文中容易误解的安全表述；同步更新首页、后端目录与知识地图。
+- 调整 [[wiki/backend/十亿用户 SSO 系统设计]] 的 OIDC 时序说明与面试答题模板：补充 RP/IdP/HttpOnly Cookie 等术语解释，将 `kid`、JWKS 公钥缓存、签名校验、Claims 校验与后端 Token 留存整理成可直接复述的安全验签补充，并统一使用 JTI 撤销名单表述。
+- 将微信原文 [[raw/weixin/一文读懂怎么让 Agent 理解业务，别一上手就写 Prompt！]] ingest 为 [[wiki/llm/Agent/Agent 业务理解与意图识别]]：本地化四张正文架构图，整理规则、分类器、Embedding/RAG、LLM、多轮状态、级联架构、执行安全、评估指标与面试答题模板，并同步加入 Agent 目录、LLM 目录、首页与知识地图。
+
+## 2026-07-26
+
+- 将微信原文 [[raw/weixin/面试官：意图识别你们是怎么做的？三层漏斗架构一次讲透]] 合并进 [[wiki/llm/Agent/Agent 业务理解与意图识别]]：补充规则层、上下文小模型层与大模型工具兜底层的生产漏斗、路由伪代码、按风险校准阈值的方法，以及误接受率、升级率、尾延迟和成本监控；本地化两张三层架构图，并避免把原文“九成流量”当作固定工程目标。
 
 ## 2026-07-27
 
+- 将微信原文 [[raw/weixin/字节面试题：Agent 里的 Skill 到底怎么做才算高质量？]] ingest 为 [[wiki/llm/Agent/Agent Skill 设计与质量保障]]：整理 Skill 与 Prompt/Tool 的边界、Skill 化筛选条件、路由与执行四层结构、风险分级、渐进披露、反模式、验证闭环、评测指标和面试回答框架，并同步更新 Agent、LLM、首页与知识地图导航。
 - 19:52 CST 知识库巡检：将 [[wiki/backend/Spring/Spring AI|Spring AI]]、[[wiki/foundations/计算机网络|计算机网络]] 的占位摘要，以及 [[wiki/llm/RAG/RAG|RAG]]、[[wiki/backend/Redis|Redis]]、[[wiki/backend/垃圾回收器|垃圾回收器]] 的来源 URL 摘要替换为与正文范围一致的主题摘要；复查 frontmatter、wikilink、代码围栏、canvas 与 base，未发现悬空链接或结构失效。
+- 将微信原文 [[raw/weixin/面试官：RAG 项目做了哪些优化，效果怎么样？]] ingest 为 [[wiki/llm/RAG/RAG 项目优化与面试回答框架]]：把业务缺口、端到端链路、选型取舍、Top-K 证据诊断、单变量实验、三层指标和责任边界整理为可复用的方法论；本地化三张正文信息图，并同步更新 RAG、LLM、首页与知识地图导航。

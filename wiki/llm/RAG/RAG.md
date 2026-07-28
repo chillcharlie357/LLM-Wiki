@@ -263,14 +263,15 @@ RRF 的得分计算公式如下：$RRFscore(d) = \sum_{r \in R} \frac{1}{k + r(d
 
 - **原理**：通过从文档块生成假设性问题，通过计算问题与问题之间的相似度来进行匹配。
 
-## 如何评估RAG效果
+## 项目诊断、优化与评估
 
-## 常见RAG架构
+- [[wiki/llm/RAG/RAG 项目优化与面试回答框架|RAG 项目优化与面试回答框架]]
+- [[wiki/llm/RAG/RAG 系统评估指标|RAG 系统评估指标]]
 
-[[wiki/llm/RAG/RAG 架构总结|RAG 架构总结]]
+## 常见 RAG 架构
+
+- [[wiki/llm/RAG/RAG 架构总结|RAG 架构总结]]
 
 ## 参考资料
 
-- [https://mp.weixin.qq.com/s/HR-Y1IEbHix_N3m0VBo9IQ](https://mp.weixin.qq.com/s/HR-Y1IEbHix_N3m0VBo9IQ)
-
-[[wiki/llm/RAG/RAG 系统评估指标|RAG 系统评估指标]]
+- [RAG 参考文章](https://mp.weixin.qq.com/s/HR-Y1IEbHix_N3m0VBo9IQ)
