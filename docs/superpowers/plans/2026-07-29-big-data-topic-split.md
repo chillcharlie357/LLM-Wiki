@@ -4,7 +4,7 @@
 
 **Goal:** Split the single big-data guide into a navigable MOC plus five learning/interview topic notes, grounded in multi-format raw material and enriched with Obsidian-native visualizations.
 
-**Architecture:** Keep `wiki/大数据/大数据.md` as a substantive MOC and place five focused children in the same folder. Each child owns one coherent concept boundary, links back to the MOC, cites source files, and contains Mermaid and selected raw-image embeds; the global Canvas mirrors the same hub-and-spoke model.
+**Architecture:** Keep `wiki/大数据/00-大数据.md` as a substantive MOC and place five focused children in the same folder. Each child owns one coherent concept boundary, links back to the MOC, cites source files, and contains Mermaid and selected raw-image embeds; the global Canvas mirrors the same hub-and-spoke model.
 
 **Tech Stack:** Obsidian Markdown and wikilinks, Mermaid, JSON Canvas 1.0, Obsidian Bases YAML, MinerU extraction, qmd local index, Git/GitHub.
 
@@ -54,12 +54,12 @@ Expected: the curated notes use claims and diagrams that can be traced to these 
 ### Task 2: Build the MOC and five focused topic notes
 
 **Files:**
-- Modify: `wiki/大数据/大数据.md`
-- Create: `wiki/大数据/分布式协调与存储.md`
-- Create: `wiki/大数据/批处理与资源调度.md`
-- Create: `wiki/大数据/SQL 分析与湖仓.md`
-- Create: `wiki/大数据/消息队列与流处理.md`
-- Create: `wiki/大数据/大数据面试与系统设计.md`
+- Modify: `wiki/大数据/00-大数据.md`
+- Create: `wiki/大数据/01-分布式协调与存储.md`
+- Create: `wiki/大数据/02-批处理与资源调度.md`
+- Create: `wiki/大数据/03-SQL 分析与湖仓.md`
+- Create: `wiki/大数据/04-消息队列与流处理.md`
+- Create: `wiki/大数据/05-大数据面试与系统设计.md`
 
 - [ ] **Step 1: Rewrite the MOC**
 
@@ -95,11 +95,11 @@ Cover a shared comparison matrix, a selection decision tree, the scenario-mechan
 
 - [ ] **Step 1: Expand the home navigation**
 
-Keep `[[wiki/大数据/大数据|大数据]]` as the primary entry and add links to all five child notes under the same heading.
+Keep `[[wiki/大数据/00-大数据|大数据]]` as the primary entry and add links to all five child notes under the same heading.
 
 - [ ] **Step 2: Update Base views**
 
-Add `parent_note` to the `大数据` table order and add `wiki/大数据/大数据.md` to the MOC card filter. Preserve valid YAML and the existing folder formula.
+Add `parent_note` to the `大数据` table order and add `wiki/大数据/00-大数据.md` to the MOC card filter. Preserve valid YAML and the existing folder formula.
 
 - [ ] **Step 3: Expand the Canvas mind map**
 

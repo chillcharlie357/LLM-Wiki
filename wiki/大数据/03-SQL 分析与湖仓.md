@@ -7,7 +7,7 @@ note_type: topic
 area: big-data
 topic: sql-lakehouse
 collection: big-data
-parent_note: "[[wiki/大数据/大数据]]"
+parent_note: "[[wiki/大数据/00-大数据]]"
 status: active
 migrated_on: '2026-07-29'
 tags:
@@ -143,4 +143,4 @@ flowchart TD
 - Iceberg 如何在对象存储上提交事务？从不可变文件、快照和 Catalog 原子指针切换回答。
 - 小文件从哪里产生？如何通过写入并行度、Compaction、聚簇和生命周期治理解决？
 
-返回 [[wiki/大数据/大数据|大数据总览]]，或继续 [[wiki/大数据/消息队列与流处理|消息队列与流处理]]。
+返回 [[wiki/大数据/00-大数据|大数据总览]]，或继续 [[wiki/大数据/04-消息队列与流处理|消息队列与流处理]]。
