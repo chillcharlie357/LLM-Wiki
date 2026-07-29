@@ -82,6 +82,7 @@ aliases:
 ### 基础
 
 - [[wiki/foundations/计算机网络|计算机网络]]
+- [[wiki/foundations/大数据|大数据理论与实践]]
 
 ## 工作日志
 
