@@ -101,4 +101,4 @@ tags:
 
 ## 2026-07-29
 
-- 将 `ForceInjection/Big-Data-Theory-and-Practice` 以 Git submodule 归档到 `raw/Big-Data-Theory-and-Practice/`，并基于课程总目录、复习提纲与各章 Markdown 讲义整理 [[wiki/foundations/大数据|大数据理论与实践]]：串联分布式协调、HDFS/HBase、MapReduce/YARN/Spark、Hive/Parquet、Kafka/Flink 与湖仓一体的核心抽象、适用场景和工程取舍，同步加入首页与知识地图。
+- 将 `ForceInjection/Big-Data-Theory-and-Practice` 以 Git submodule 归档到 `raw/Big-Data-Theory-and-Practice/`，并基于课程总目录与各章 Markdown 讲义整理 [[wiki/Big-Data/大数据|大数据学习与面试指南]]：以学习路线、面试问题链和系统设计答题框架串联分布式协调、HDFS/HBase、MapReduce/YARN/Spark、Hive/Parquet、Kafka/Flink 与湖仓一体，同步加入首页与知识地图。

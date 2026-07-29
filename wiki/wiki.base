@@ -3,7 +3,7 @@ filters:
     - file.ext == "md"
     - file.inFolder("wiki")
 formulas:
-  section: if(file.inFolder("wiki/llm"), "LLM", if(file.inFolder("wiki/backend"), "后端", if(file.inFolder("wiki/foundations"), "基础", "其他")))
+  section: if(file.inFolder("wiki/llm"), "LLM", if(file.inFolder("wiki/backend"), "后端", if(file.inFolder("wiki/Big-Data"), "Big Data", if(file.inFolder("wiki/foundations"), "基础", "其他"))))
 properties:
   formula.section:
     displayName: Section
@@ -102,6 +102,23 @@ views:
       - file.name
       - summary
       - parent_note
+      - file.folder
+      - source_type
+      - file.mtime
+  - type: table
+    name: Big Data
+    filters:
+      and:
+        - file.inFolder("wiki/Big-Data")
+    groupBy:
+      property: collection
+      direction: ASC
+    order:
+      - note_type
+      - topic
+      - status
+      - file.name
+      - summary
       - file.folder
       - source_type
       - file.mtime

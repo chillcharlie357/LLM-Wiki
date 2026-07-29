@@ -82,7 +82,10 @@ aliases:
 ### 基础
 
 - [[wiki/foundations/计算机网络|计算机网络]]
-- [[wiki/foundations/大数据|大数据理论与实践]]
+
+### Big Data
+
+- [[wiki/Big-Data/大数据|大数据学习与面试指南]]
 
 ## 工作日志
 
