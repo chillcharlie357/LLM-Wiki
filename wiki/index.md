@@ -83,9 +83,9 @@ aliases:
 
 - [[wiki/foundations/计算机网络|计算机网络]]
 
-### Big Data
+### 大数据
 
-- [[wiki/Big-Data/大数据|大数据学习与面试指南]]
+- [[wiki/大数据/大数据|大数据]]
 
 ## 工作日志
 

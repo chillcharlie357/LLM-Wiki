@@ -3,7 +3,7 @@ filters:
     - file.ext == "md"
     - file.inFolder("wiki")
 formulas:
-  section: if(file.inFolder("wiki/llm"), "LLM", if(file.inFolder("wiki/backend"), "后端", if(file.inFolder("wiki/Big-Data"), "Big Data", if(file.inFolder("wiki/foundations"), "基础", "其他"))))
+  section: if(file.inFolder("wiki/llm"), "LLM", if(file.inFolder("wiki/backend"), "后端", if(file.inFolder("wiki/大数据"), "大数据", if(file.inFolder("wiki/foundations"), "基础", "其他"))))
 properties:
   formula.section:
     displayName: Section
@@ -106,10 +106,10 @@ views:
       - source_type
       - file.mtime
   - type: table
-    name: Big Data
+    name: 大数据
     filters:
       and:
-        - file.inFolder("wiki/Big-Data")
+        - file.inFolder("wiki/大数据")
     groupBy:
       property: collection
       direction: ASC
