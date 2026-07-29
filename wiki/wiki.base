@@ -3,7 +3,7 @@ filters:
     - file.ext == "md"
     - file.inFolder("wiki")
 formulas:
-  section: if(file.inFolder("wiki/llm"), "LLM", if(file.inFolder("wiki/backend"), "后端", if(file.inFolder("wiki/foundations"), "基础", "其他")))
+  section: if(file.inFolder("wiki/llm"), "LLM", if(file.inFolder("wiki/backend"), "后端", if(file.inFolder("wiki/大数据"), "大数据", if(file.inFolder("wiki/foundations"), "基础", "其他"))))
 properties:
   formula.section:
     displayName: Section
@@ -106,6 +106,24 @@ views:
       - source_type
       - file.mtime
   - type: table
+    name: 大数据
+    filters:
+      and:
+        - file.inFolder("wiki/大数据")
+    groupBy:
+      property: collection
+      direction: ASC
+    order:
+      - note_type
+      - topic
+      - status
+      - file.name
+      - summary
+      - parent_note
+      - file.folder
+      - source_type
+      - file.mtime
+  - type: table
     name: Foundations
     filters:
       and:
@@ -154,6 +172,7 @@ views:
         - file.path == "wiki/backend/后端.md"
         - file.path == "wiki/llm/RAG/RAG.md"
         - file.path == "wiki/llm/Agent/Agent.md"
+        - file.path == "wiki/大数据/大数据.md"
     order:
       - file.name
       - formula.section

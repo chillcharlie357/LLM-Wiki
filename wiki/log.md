@@ -102,3 +102,4 @@ tags:
 ## 2026-07-29
 
 - 知识库巡检：将 [[wiki/llm/Agent/Pi/Pi|Pi]] 中 3 个机器相关的绝对来源链接改为 vault 内 wikilink，并把 [[wiki/qmdw|qmdw]] 的索引位置改为仓库相对路径；复查 frontmatter、wikilink、代码围栏、canvas、base 与 qmd 索引。
+- 将 `ForceInjection/Big-Data-Theory-and-Practice` 以 Git submodule 归档到 `raw/Big-Data-Theory-and-Practice/`，并将 [[wiki/大数据/大数据|大数据]] 重构为有正文的 MOC 与五篇主题页：[[wiki/大数据/分布式协调与存储|分布式协调与存储]]、[[wiki/大数据/批处理与资源调度|批处理与资源调度]]、[[wiki/大数据/SQL 分析与湖仓|SQL 分析与湖仓]]、[[wiki/大数据/消息队列与流处理|消息队列与流处理]]、[[wiki/大数据/大数据面试与系统设计|大数据面试与系统设计]]。除各章 Markdown 外，使用 MinerU 核对 ZooKeeper、MapReduce、Flink PDF、Parquet PPTX 与 Lakehouse 论文，并复用 raw 中的 Bigtable、Shuffle、Dremel、ETL、Lambda/Kappa 原图；各页补充 Mermaid 数据流、时序、决策树和思维导图，同时扩展首页、Base 与 Canvas 导航。
