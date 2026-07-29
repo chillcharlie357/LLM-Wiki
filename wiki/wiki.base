@@ -172,7 +172,7 @@ views:
         - file.path == "wiki/backend/后端.md"
         - file.path == "wiki/llm/RAG/RAG.md"
         - file.path == "wiki/llm/Agent/Agent.md"
-        - file.path == "wiki/大数据/大数据.md"
+        - file.path == "wiki/大数据/00-大数据.md"
     order:
       - file.name
       - formula.section
