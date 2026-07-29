@@ -3,7 +3,7 @@
 		{"id":"a100000000000001","type":"group","x":-80,"y":-80,"width":1500,"height":1080,"color":"6","label":"LLM"},
 		{"id":"a100000000000002","type":"group","x":1320,"y":-80,"width":980,"height":1060,"color":"4","label":"后端"},
 		{"id":"a100000000000003","type":"group","x":1320,"y":800,"width":980,"height":340,"color":"5","label":"基础"},
-		{"id":"a100000000000004","type":"group","x":2360,"y":-80,"width":980,"height":340,"color":"3","label":"大数据"},
+		{"id":"a100000000000004","type":"group","x":2360,"y":-80,"width":1180,"height":920,"color":"3","label":"大数据"},
 		{"id":"3400d57c0ecd6e39","x":629,"y":-201,"width":250,"height":60,"type":"text","text":""},
 		{"id":"b100000000000001","type":"file","file":"wiki/llm/LLM.md","x":40,"y":40,"width":280,"height":180},
 		{"id":"b100000000000010","type":"file","file":"wiki/llm/模型训练/混合精度训练.md","x":940,"y":560,"width":260,"height":150},
@@ -26,7 +26,12 @@
 		{"id":"c100000000000005","type":"file","file":"wiki/backend/Redis.md","x":1760,"y":500,"width":260,"height":160},
 		{"id":"c100000000000008","type":"file","file":"wiki/backend/十亿用户 SSO 系统设计.md","x":2080,"y":270,"width":220,"height":160},
 		{"id":"d100000000000002","type":"file","file":"wiki/foundations/计算机网络.md","x":1920,"y":900,"width":320,"height":180},
-		{"id":"d100000000000003","type":"file","file":"wiki/大数据/大数据.md","x":2480,"y":40,"width":320,"height":180},
+		{"id":"d100000000000003","type":"file","file":"wiki/大数据/大数据.md","x":2740,"y":40,"width":320,"height":180},
+		{"id":"d100000000000004","type":"file","file":"wiki/大数据/分布式协调与存储.md","x":2440,"y":320,"width":320,"height":180},
+		{"id":"d100000000000005","type":"file","file":"wiki/大数据/批处理与资源调度.md","x":2820,"y":320,"width":320,"height":180},
+		{"id":"d100000000000006","type":"file","file":"wiki/大数据/SQL 分析与湖仓.md","x":3200,"y":320,"width":300,"height":180},
+		{"id":"d100000000000007","type":"file","file":"wiki/大数据/消息队列与流处理.md","x":2640,"y":600,"width":320,"height":180},
+		{"id":"d100000000000008","type":"file","file":"wiki/大数据/大数据面试与系统设计.md","x":3020,"y":600,"width":320,"height":180},
 		{"id":"b100000000000007","type":"file","file":"wiki/llm/RAG/RAG 架构总结.md","x":40,"y":560,"width":260,"height":150},
 		{"id":"b100000000000008","type":"file","file":"wiki/llm/RAG/RAG 系统评估指标.md","x":340,"y":560,"width":260,"height":150},
 		{"id":"b100000000000009","type":"file","file":"wiki/llm/模型训练/Flash Attention.md","x":640,"y":560,"width":260,"height":150},
@@ -53,6 +58,11 @@
 		{"id":"e100000000000019","fromNode":"c100000000000001","fromSide":"right","toNode":"c100000000000008","toSide":"left","label":"身份架构"},
 		{"id":"e100000000000020","fromNode":"b100000000000002","fromSide":"bottom","toNode":"b100000000000014","toSide":"top","label":"业务理解"},
 		{"id":"e100000000000021","fromNode":"b100000000000002","fromSide":"bottom","toNode":"b100000000000015","toSide":"top","label":"能力沉淀"},
-		{"id":"e100000000000022","fromNode":"b100000000000003","fromSide":"bottom","toNode":"b100000000000016","toSide":"top","label":"诊断与优化"}
+		{"id":"e100000000000022","fromNode":"b100000000000003","fromSide":"bottom","toNode":"b100000000000016","toSide":"top","label":"诊断与优化"},
+		{"id":"e100000000000023","fromNode":"d100000000000003","fromSide":"bottom","toNode":"d100000000000004","toSide":"top","label":"协调与存储"},
+		{"id":"e100000000000024","fromNode":"d100000000000003","fromSide":"bottom","toNode":"d100000000000005","toSide":"top","label":"批处理"},
+		{"id":"e100000000000025","fromNode":"d100000000000003","fromSide":"bottom","toNode":"d100000000000006","toSide":"top","label":"湖仓"},
+		{"id":"e100000000000026","fromNode":"d100000000000003","fromSide":"bottom","toNode":"d100000000000007","toSide":"top","label":"流处理"},
+		{"id":"e100000000000027","fromNode":"d100000000000003","fromSide":"bottom","toNode":"d100000000000008","toSide":"top","label":"面试与设计"}
 	]
 }
