@@ -37,7 +37,6 @@ aliases:
 ### LLM
 
 - [[wiki/llm/LLM|LLM 目录]]
-- [[wiki/llm/LLM|LLM]]
 - [[wiki/llm/Agent/Agent|Agent]]
 - [[wiki/llm/Agent/Agent 业务理解与意图识别|Agent 业务理解与意图识别]]
 - [[wiki/llm/Agent/Agent Skill 设计与质量保障|Agent Skill 设计与质量保障]]
@@ -112,6 +111,6 @@ aliases:
 
 ## 说明
 
-- 每个页面保留 `source` 字段，指向原始 Notion 页面。
-- 当前版本优先保留正文、目录结构和页面关系。
-- Notion 图片、PDF 附件和部分超长图示暂未批量本地化下载。
+- 技术内容页在存在上游材料时，通过 `source` 与 `source_type` 保留追溯线索；本地维护的目录页、日志和工具说明不强行伪造外部来源。
+- 当前来源包括 Notion、微信公众号、GitHub、本地 `raw/` 归档和 Git submodule，整理后的结论统一沉淀在 `wiki/`。
+- 正文中有阅读价值的图片优先归档到 `raw/assets/` 并使用本地 embed；完整原始资料继续保留在 `raw/`。
