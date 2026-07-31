@@ -58,7 +58,7 @@ aliases:
 也就是说，在当前仓库里：
 
 - 配置文件在 [[.config/qmd/index.yml]]
-- 索引文件在 `/Users/heleyang/Code/MyWiki/.cache/qmd/index.sqlite`
+- 索引文件在仓库内的 `.cache/qmd/index.sqlite`
 - 模型下载默认走 `https://hf-mirror.com`
 
 ## 当前收录范围
