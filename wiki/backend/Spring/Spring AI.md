@@ -7,6 +7,7 @@ note_type: reference
 area: backend
 topic: spring-ai
 collection: Spring
+parent_note: "[[wiki/backend/后端]]"
 status: stub
 migrated_on: '2026-04-20'
 tags:
