@@ -82,7 +82,7 @@ flowchart TD
     F --> FT[Footer<br/>Schema / Offset / Statistics]
 ```
 
-![[raw/Big-Data-Theory-and-Practice/courses/chapter08/dremel.png|860]]
+![[raw/assets/big-data/dremel.png|860]]
 
 Dremel 的 repetition level 与 definition level 让嵌套记录无需完全扁平化即可按列存储。面试时重点讲思想：Definition Level 表达可选字段出现到哪一层，Repetition Level 表达重复路径从哪一层开始新值；不要只背术语。
 

@@ -107,3 +107,4 @@ tags:
 ## 2026-08-06
 
 - 将牛客 PROMPT1-PROMPT35 提示词工程题单整理为 [[wiki/llm/基础概念/提示词工程题套路|提示词工程题套路]]：沉淀严格 JSON 抽取、分类标注、规则计算、审批风控和工具参数生成的通用模板，补充题号速查表、丢分点清单与作答策略；同时将来源摘要归档到 [[raw/nowcoder/牛客提示词工程题单解析]]，并同步更新首页、LLM 目录与知识地图导航。
+- 修复大数据笔记在未初始化 `raw/Big-Data-Theory-and-Practice` submodule 时的 Obsidian 图片缺失：将 Bigtable、MapReduce、Dremel、ETL、Lambda/Kappa 五张图复制到 `raw/assets/big-data/`，并把相关页面的图片嵌入改为稳定的本地资源路径。
