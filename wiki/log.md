@@ -103,3 +103,7 @@ tags:
 
 - 将 `ForceInjection/Big-Data-Theory-and-Practice` 以 Git submodule 归档到 `raw/Big-Data-Theory-and-Practice/`，并将 [[wiki/大数据/00-大数据|大数据]] 重构为有正文的 MOC 与五篇主题页：[[wiki/大数据/01-分布式协调与存储|分布式协调与存储]]、[[wiki/大数据/02-批处理与资源调度|批处理与资源调度]]、[[wiki/大数据/03-SQL 分析与湖仓|SQL 分析与湖仓]]、[[wiki/大数据/04-消息队列与流处理|消息队列与流处理]]、[[wiki/大数据/05-大数据面试与系统设计|大数据面试与系统设计]]。除各章 Markdown 外，使用 MinerU 核对 ZooKeeper、MapReduce、Flink PDF、Parquet PPTX 与 Lakehouse 论文，并复用 raw 中的 Bigtable、Shuffle、Dremel、ETL、Lambda/Kappa 原图；各页补充 Mermaid 数据流、时序、决策树和思维导图，同时扩展首页、Base 与 Canvas 导航。
 - 为大数据目录的六篇笔记增加 `00-` 到 `05-` 文件名前缀，固定“总览 → 协调与存储 → 批处理 → SQL/湖仓 → 消息/流处理 → 面试/系统设计”的阅读顺序；同步更新首页、Wikilink、`parent_note`、Base 与 Canvas 路径，页面标题保持不带编号。
+
+## 2026-08-06
+
+- 将牛客 PROMPT1-PROMPT35 提示词工程题单整理为 [[wiki/llm/基础概念/提示词工程题套路|提示词工程题套路]]：沉淀严格 JSON 抽取、分类标注、规则计算、审批风控和工具参数生成的通用模板，补充题号速查表、丢分点清单与作答策略；同时将来源摘要归档到 [[raw/nowcoder/牛客提示词工程题单解析]]，并同步更新首页、LLM 目录与知识地图导航。

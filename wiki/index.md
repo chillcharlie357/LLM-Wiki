@@ -66,6 +66,7 @@ aliases:
 - [[wiki/llm/模型训练/Flash Attention|Flash Attention]]
 - [[wiki/llm/基础概念/tokenizer|tokenizer]]
 - [[wiki/llm/基础概念/LLM 思维链|LLM 思维链]]
+- [[wiki/llm/基础概念/提示词工程题套路|提示词工程题套路]]
 - [[wiki/llm/cs336|cs336]]
 
 ### 后端

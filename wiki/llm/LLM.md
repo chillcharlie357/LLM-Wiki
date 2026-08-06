@@ -32,6 +32,8 @@ tags:
 
 [[wiki/llm/基础概念/tokenizer|tokenizer]]
 
+[[wiki/llm/基础概念/提示词工程题套路|提示词工程题套路]]
+
 - [输入密码 · 语雀](https://www.yuque.com/snailclimb/itdq8h?#) 《SpringAI 智能面试平台+RAG知识库》 🔑 密码：wx81
 
 [[wiki/llm/基础概念/LLM 思维链|LLM 思维链]]
