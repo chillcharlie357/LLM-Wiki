@@ -52,13 +52,13 @@ aliases:
 
 此外它还额外提供一个仓库级便捷命令：
 
-6. `./qmdw sync` 会顺序执行一次 `qmd update` 和 `qmd embed`
+6. `./qmdw sync` 会先补建缺失的 `wiki` / `raw` collection，再顺序执行一次 `qmd update` 和 `qmd embed`
 7. `./qmdw embed` 在 GPU / Metal 初始化失败时，会自动重试一次 CPU 模式
 
 也就是说，在当前仓库里：
 
-- 配置文件在 [[.config/qmd/index.yml]]
-- 索引文件在 `/Users/heleyang/Code/MyWiki/.cache/qmd/index.sqlite`
+- collection 配置在首次 `./qmdw sync` 时生成到 `.config/qmd/index.yml`
+- 索引文件在当前仓库的 `.cache/qmd/index.sqlite`
 - 模型下载默认走 `https://hf-mirror.com`
 
 ## 当前收录范围
@@ -100,6 +100,8 @@ aliases:
 ```
 
 因为已删除文件和旧内容哈希的清理发生在 `update` 阶段，而缺失向量的补齐发生在 `embed` 阶段。把两步固定成一个命令，比手工记顺序更稳。
+
+新 clone 或本地 `.config/` 被清理后也直接运行同一命令即可；`qmdw` 会先恢复 `wiki` 与 `raw` 两个 collection，避免出现 0 文档且无法检索的空索引。
 
 如果单独跑 embedding，也建议继续通过：
 
