@@ -107,3 +107,6 @@ tags:
 ## 2026-08-06
 
 - 将牛客 PROMPT1-PROMPT35 提示词工程题单整理为 [[wiki/llm/基础概念/提示词工程题套路|提示词工程题套路]]：沉淀严格 JSON 抽取、分类标注、规则计算、审批风控和工具参数生成的通用模板，补充题号速查表、丢分点清单与作答策略；同时将来源摘要归档到 [[raw/nowcoder/牛客提示词工程题单解析]]，并同步更新首页、LLM 目录与知识地图导航。
+
+## 2026-08-13
+- 基于 GitHub 源码与本地 `@earendil-works/pi-coding-agent` 安装包，新增 [[wiki/llm/Agent/DeepSeek Harness vs Pi 技术对比|DeepSeek Harness vs Pi 技术对比]]：从项目定位、架构核心、功能特性、技术栈、扩展机制、集成能力、工作流协作、文档生态、许可证与选型建议 10 个维度逐项对比 DeepSeek Harness（`dsh`，Cordis 插件树 + 配置分层）与 earendil-works/pi（极小内核 + 代码热重载）；含对比速查表、两张 Mermaid 图与具体文件路径证据，并交叉链接 [[wiki/llm/Agent/Pi/Pi|Pi]]、[[wiki/llm/Agent/Harness/Harness 架构与源码：运行时、联动与模式|Harness 架构与源码]] 等既有笔记；同步更新首页与知识地图。
