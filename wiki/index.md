@@ -49,6 +49,7 @@ aliases:
 - [[wiki/llm/Agent/Harness/Harness Engineering × SDD：AI Agent 工程体系完整解读|Harness Engineering × SDD：AI Agent 工程体系完整解读]]
 - [[wiki/llm/Agent/Harness/OpenHarness：开源智能体基础设施深入解析|OpenHarness：开源智能体基础设施深入解析]]
 - [[wiki/llm/Agent/Harness/OpenClaw vs Claude Code vs Mem0 技术对比|OpenClaw vs Claude Code vs Mem0 技术对比]]
+- [[wiki/llm/Agent/DeepSeek Harness vs Pi 技术对比|DeepSeek Harness vs Pi 技术对比]]
 - [[wiki/llm/Cuda/1 CUDA 编程基础总结|1 CUDA 编程基础总结]]
 - [[wiki/llm/Cuda/2 NVIDIA GPU 基础数据结构|2 NVIDIA GPU 基础数据结构]]
 - [[wiki/llm/Cuda/3 CUDA 共享内存详解|3 CUDA 共享内存详解]]

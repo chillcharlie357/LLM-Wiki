@@ -36,7 +36,8 @@
 		{"id":"b100000000000008","type":"file","file":"wiki/llm/RAG/RAG 系统评估指标.md","x":340,"y":560,"width":260,"height":150},
 		{"id":"b100000000000009","type":"file","file":"wiki/llm/模型训练/Flash Attention.md","x":640,"y":560,"width":260,"height":150},
 		{"id":"b100000000000005","type":"file","file":"wiki/llm/基础概念/tokenizer.md","x":380,"y":300,"width":280,"height":180},
-		{"id":"b100000000000017","type":"file","file":"wiki/llm/基础概念/提示词工程题套路.md","x":380,"y":520,"width":280,"height":170}
+		{"id":"b100000000000017","type":"file","file":"wiki/llm/基础概念/提示词工程题套路.md","x":380,"y":520,"width":280,"height":170},
+		{"id":"b100000000000018","type":"file","file":"wiki/llm/Agent/DeepSeek Harness vs Pi 技术对比.md","x":1040,"y":780,"width":300,"height":160}
 	],
 	"edges":[
 		{"id":"e100000000000001","fromNode":"b100000000000001","fromSide":"right","toNode":"b100000000000002","toSide":"left","label":"扩展到 Agent"},
@@ -65,6 +66,7 @@
 		{"id":"e100000000000025","fromNode":"d100000000000003","fromSide":"bottom","toNode":"d100000000000006","toSide":"top","label":"湖仓"},
 		{"id":"e100000000000026","fromNode":"d100000000000003","fromSide":"bottom","toNode":"d100000000000007","toSide":"top","label":"流处理"},
 		{"id":"e100000000000027","fromNode":"d100000000000003","fromSide":"bottom","toNode":"d100000000000008","toSide":"top","label":"面试与设计"},
-		{"id":"e100000000000028","fromNode":"b100000000000001","fromSide":"bottom","toNode":"b100000000000017","toSide":"top","label":"提示词工程"}
+		{"id":"e100000000000028","fromNode":"b100000000000001","fromSide":"bottom","toNode":"b100000000000017","toSide":"top","label":"提示词工程"},
+		{"id":"e100000000000029","fromNode":"b100000000000011","fromSide":"bottom","toNode":"b100000000000018","toSide":"top","label":"dsh vs pi"}
 	]
 }
