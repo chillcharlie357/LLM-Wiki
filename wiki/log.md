@@ -107,3 +107,7 @@ tags:
 ## 2026-08-06
 
 - 将牛客 PROMPT1-PROMPT35 提示词工程题单整理为 [[wiki/llm/基础概念/提示词工程题套路|提示词工程题套路]]：沉淀严格 JSON 抽取、分类标注、规则计算、审批风控和工具参数生成的通用模板，补充题号速查表、丢分点清单与作答策略；同时将来源摘要归档到 [[raw/nowcoder/牛客提示词工程题单解析]]，并同步更新首页、LLM 目录与知识地图导航。
+
+## 2026-08-13
+
+- 新增 [[wiki/llm/Agent/OpenCode 代码评审自动化与 GitHub Action 配置]]：沉淀 opencode GitHub Action 在私服仓库跑「PR 开起时自动评审 + `/oc` 评论手动触发」的完整配置路径，按故障位置分别给出四个坑的定位与修复（`use_github_token` 鉴权、`persist-credentials: true` checkout 凭证、`OPENCODE_API_KEY` provider env 名、不给 `pull_request` 事件传 `prompt:`），附最小 workflow、opencode-go 订阅用量、`.agents/skills/code-review` skill 挂载与权限配置、自建 GitHub App 升级条件、验收清单，并在 text2sql 实跑记录中回溯 PR #24–#29；同步更新首页、LLM 目录与知识地图导航。
