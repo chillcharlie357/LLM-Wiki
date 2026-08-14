@@ -120,3 +120,7 @@ tags:
 ## 2026-08-14（续）
 
 - 新增 [[wiki/llm/Agent/DeepSeek Harness 介绍与开发使用指南|DeepSeek Harness 介绍与开发使用指南]]：基于仓库真实源码与文档（`README.md`、`AGENTS.md`、`docs/architecture.md`、`docs/cordis-primer.md`、`docs/agent-lifecycle.md`、`docs/development.md`、`CONTRIBUTING.md`）整理 dsh 的入门介绍 + 本地开发/使用指南，含 Cordis 五要素、Profile/Bundle/Patch 三层装配、core 包与能力 seam 表、三大事件域、turn/step 生命周期（含 Mermaid）、首次环境搭建与脚本清单、跑起来、最小插件骨架、调试与质量门、文档生态与现状；并同步更新首页 index.md 与知识地图 map.canvas。
+
+## 2026-08-14（续二）
+
+- 为 [[wiki/llm/Agent/DeepSeek Harness 介绍与开发使用指南|DeepSeek Harness 介绍与开发使用指南]] 增补「10. 实战示例：从安装到运行到调试」一节：基于 `apps/cli/reference/README.md`、`docs/development.md`、根 `package.json`、`packages/preset/README.md`、`packages/skill/README.md`、`packages/boot/cmdline/README.md` 核对真实行为，给出 clone→凭据→build→起 Web→headless 任务→新 profile 装插件（`dsh plugin --profile … add …`，含 `allowBuilds`/bundle 自动调和）→`--dump-config`/`--dump-default-config` 装配诊断→`minimal` preset 极简对照→质量门/测试→调试信号与关闭行为（`SIGINT`/`SIGTERM`、`DSH_TOOLS_MODE`/`DSH_PERMISSION_MODE`/`DSH_TELEMETRY_MODE`、workspace-write 权限）的端到端 walkthrough；同步扩充参考来源清单。
