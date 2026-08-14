@@ -41,6 +41,7 @@ aliases:
 - [[wiki/llm/Agent/Agent|Agent]]
 - [[wiki/llm/Agent/Agent 业务理解与意图识别|Agent 业务理解与意图识别]]
 - [[wiki/llm/Agent/Agent Skill 设计与质量保障|Agent Skill 设计与质量保障]]
+- [[wiki/llm/Agent/OpenCode 代码评审自动化与 GitHub Action 配置|OpenCode 代码评审自动化与 GitHub Action 配置]]
 - [[wiki/llm/Agent/Memory/Agent Memory|Agent Memory]]
 - [[wiki/llm/Agent/Harness/Harness 架构与源码：运行时、联动与模式|Harness 架构与源码：运行时、联动与模式]]
 - [[wiki/llm/Agent/Pi/Pi|Pi]]

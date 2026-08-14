@@ -46,6 +46,8 @@ tags:
 
 [[wiki/llm/Agent/Agent Skill 设计与质量保障|Agent Skill 设计与质量保障]]
 
+[[wiki/llm/Agent/OpenCode 代码评审自动化与 GitHub Action 配置|OpenCode 代码评审自动化与 GitHub Action 配置]]
+
 [[wiki/llm/模型/DeepSeek V4|DeepSeek V4]]
 
 ---
