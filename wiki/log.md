@@ -116,3 +116,7 @@ tags:
 ## 2026-08-14
 
 - 精简并补充 [[wiki/llm/Agent/DeepSeek Harness vs Pi 技术对比|DeepSeek Harness vs Pi 技术对比]]：在「核心结论」后新增「类比：dsh 之于 agent ≈ Spring Boot 之于微服务」小节，给出一句话介绍口径、Spring↔dsh 映射表与并排 Mermaid 可视化（IoC 容器 + 插件式能力包 + 约定配置的形态类比，标注成熟度与领域差异两处过度类比的边界）；同步精简摘要 callout 文案，使其更可直接用于向他人介绍。
+
+## 2026-08-14（续）
+
+- 新增 [[wiki/llm/Agent/DeepSeek Harness 介绍与开发使用指南|DeepSeek Harness 介绍与开发使用指南]]：基于仓库真实源码与文档（`README.md`、`AGENTS.md`、`docs/architecture.md`、`docs/cordis-primer.md`、`docs/agent-lifecycle.md`、`docs/development.md`、`CONTRIBUTING.md`）整理 dsh 的入门介绍 + 本地开发/使用指南，含 Cordis 五要素、Profile/Bundle/Patch 三层装配、core 包与能力 seam 表、三大事件域、turn/step 生命周期（含 Mermaid）、首次环境搭建与脚本清单、跑起来、最小插件骨架、调试与质量门、文档生态与现状；并同步更新首页 index.md 与知识地图 map.canvas。

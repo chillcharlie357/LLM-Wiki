@@ -38,7 +38,8 @@
 		{"id":"b100000000000005","type":"file","file":"wiki/llm/基础概念/tokenizer.md","x":380,"y":300,"width":280,"height":180},
 		{"id":"b100000000000017","type":"file","file":"wiki/llm/基础概念/提示词工程题套路.md","x":380,"y":520,"width":280,"height":170},
 		{"id":"bd100000000000009","type":"file","file":"wiki/llm/Agent/OpenCode 代码评审自动化与 GitHub Action 配置.md","x":740,"y":960,"width":300,"height":160}
-		{"id":"b100000000000018","type":"file","file":"wiki/llm/Agent/DeepSeek Harness vs Pi 技术对比.md","x":1040,"y":780,"width":300,"height":160}
+		{"id":"b100000000000018","type":"file","file":"wiki/llm/Agent/DeepSeek Harness vs Pi 技术对比.md","x":1040,"y":780,"width":300,"height":160},
+		{"id":"b100000000000019","type":"file","file":"wiki/llm/Agent/DeepSeek Harness 介绍与开发使用指南.md","x":1040,"y":980,"width":300,"height":160}
 	],
 	"edges":[
 		{"id":"e100000000000001","fromNode":"b100000000000001","fromSide":"right","toNode":"b100000000000002","toSide":"left","label":"扩展到 Agent"},
