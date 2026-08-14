@@ -30,12 +30,50 @@ aliases:
 
 # DeepSeek Harness vs Pi 技术对比
 
-> [!abstract] 核心结论
-> 两者都是 TypeScript / MIT / ESM 的开源 agent 运行时，但代表两个相反方向：
-> - **DeepSeek Harness（`dsh`）** 走「**一切皆插件**」的装配路线，用 Cordis 插件框架把模型适配、工具、会话日志、agent 循环都做成可替换、可叠加、可回滚的配置层，目标是生产级、可组合、可移植的 agent 产品底座。
-> - **pi** 走「**极小内核 + 自我扩展**」的代码优先路线，默认只有 `Read`/`Write`/`Edit`/`Bash` 四个工具和很短的系统提示词，靠 TypeScript 扩展、技能、树状会话让 agent 自己长出新能力，目标是稳定、克制、可被 agent 自己演进的 coding agent。
+> [!abstract] 一句话
+> 两个都是 TypeScript / MIT / ESM 的开源 agent 运行时，取向相反：
+> - **DeepSeek Harness（`dsh`）**——**一切皆插件**，用 Cordis 把模型、工具、会话、循环做成可替换、可叠加、可回滚的配置层，目标是可组装的生产级 agent 底座。
+> - **pi**——**极小内核 + 自我扩展**，默认只四工具（`Read`/`Write`/`Edit`/`Bash`）、很短系统提示词，靠 TS 扩展 + 技能 + 树状会话让 agent 自己长能力，目标是克制、稳定的 coding agent。
 >
 > 一句话：**dsh 把扩展点做成配置 seam，pi 把扩展点做成代码热重载。**
+
+## 类比：dsh 之于 agent ≈ Spring Boot 之于微服务
+
+向别人介绍 dsh 最快的说法：**它是 agent 世界的 Spring Boot**——形态上一样是「IoC 容器 + 插件式 starter + 约定优于配置」，只是装的是「认知循环的能力」而非「分布式中间件」。
+
+- dsh 跑在 [Cordis](https://github.com/cordiverse/cordis)（一个主打「时空可组合性」的 DI/组合框架）上，slogan 直写 **“Everything is a Plugin”**（`README.md`）。看 `AGENTS.md` 的 `packages/` 布局：`core/` 是 session / system-prompt / tools / agent / agent-loop 这条「产品 API 脊柱」，周围一圈能力包 `llm/`、`shell/`、`fs/`、`lsp/`、`web/`、`skill/`、`subagent/`、`workflow/`、`compaction/`——每个都按 **Service Definition + Provider + Consumer** 三角色声明。
+- 对应关系很clean：
+
+| Spring（微服务） | dsh（agent） | 说明 |
+|---|---|---|
+| ApplicationContext / IoC 容器 | Cordis（vendored）DI 内核 | 负责把模块插起来、按生命周期注册/卸载 |
+| Bean + `@Autowired` | Service Definition + Consumer + Plugin | 声明能力、消费能力 |
+| Spring Boot Starter（web/data/security…） | `packages/*` 能力包（llm/shell/fs/lsp/web/skill/subagent…） | 可插拔的能力模块 |
+| Spring Profiles / `application.yml` | `preset/` + `--profile` + `cordis.yml` + `cordis.patch.yml` | 按组合切换装配 |
+| Spring Boot 应用入口 | `dsh web` / `dsh --profile headless` / ACP server | 运行时入口 |
+| 分布式系统关注点 | 认知循环关注点 | 形态同，内容异 |
+
+- **两点别过度类比**：① 成熟度——Spring 是十几年企业稳态框架；dsh README 自标 *developer preview*、**“THERE WILL BE COMPATIBILITY-BREAKING CHANGES”**，连 on-disk 格式都不承诺兼容，当 Spring「研究」正合适，当 Spring「用」太早。② 领域——微服务关心服务发现/网关/熔断；agent 关心 tool 调用 / 上下文压缩 / 子 agent 委派 / 权限审批。所以 dsh 的 “starter” 是 `compaction`、`subagent`、`guard`、`interaction`，不是 `eureka`、`gateway`。
+
+```mermaid
+flowchart LR
+  subgraph spring[Spring Boot 之于微服务]
+    AC[ApplicationContext / IoC] --> B1[Starter: web]
+    AC --> B2[Starter: data]
+    AC --> B3[Starter: security]
+    B1 & B2 & B3 --> SVC[分布式能力: 服务发现/网关/熔断]
+  end
+  subgraph dsh[dsh 之于 agent]
+    CD[Cordis / DI 内核] --> P1[Bundle: llm]
+    CD --> P2[Bundle: shell/fs/lsp]
+    CD --> P3[Bundle: subagent/compaction]
+    P1 & P2 & P3 --> AG[认知循环: tool/上下文/子 agent/审批]
+  end
+  spring -.“同形态: IoC + 插件 + 约定”.-> dsh
+```
+
+> [!tip] 介绍口径
+> dsh 之于 agent ≈ Spring Boot 之于微服务——形态成立（IoC 容器 + 插件式能力包 + 约定配置），但它是 TS、pre-release，且装的是「认知循环的能力」而非「分布式中间件」。
 
 ## 对比速查表
 
