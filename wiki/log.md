@@ -111,3 +111,4 @@ tags:
 ## 2026-08-13
 
 - 新增 [[wiki/llm/Agent/OpenCode 代码评审自动化与 GitHub Action 配置]]：沉淀 opencode GitHub Action 在私服仓库跑「PR 开起时自动评审 + `/oc` 评论手动触发」的完整配置路径，按故障位置分别给出四个坑的定位与修复（`use_github_token` 鉴权、`persist-credentials: true` checkout 凭证、`OPENCODE_API_KEY` provider env 名、不给 `pull_request` 事件传 `prompt:`），附最小 workflow、opencode-go 订阅用量、`.agents/skills/code-review` skill 挂载与权限配置、自建 GitHub App 升级条件、验收清单，并在 text2sql 实跑记录中回溯 PR #24–#29；同步更新首页、LLM 目录与知识地图导航。
+- 基于 GitHub 源码与本地 `@earendil-works/pi-coding-agent` 安装包，新增 [[wiki/llm/Agent/DeepSeek Harness vs Pi 技术对比|DeepSeek Harness vs Pi 技术对比]]：从项目定位、架构核心、功能特性、技术栈、扩展机制、集成能力、工作流协作、文档生态、许可证与选型建议 10 个维度逐项对比 DeepSeek Harness（`dsh`，Cordis 插件树 + 配置分层）与 earendil-works/pi（极小内核 + 代码热重载）；含对比速查表、两张 Mermaid 图与具体文件路径证据，并交叉链接 [[wiki/llm/Agent/Pi/Pi|Pi]]、[[wiki/llm/Agent/Harness/Harness 架构与源码：运行时、联动与模式|Harness 架构与源码]] 等既有笔记；同步更新首页与知识地图。
