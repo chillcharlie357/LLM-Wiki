@@ -22,7 +22,7 @@
 - 是主要阅读层和知识沉淀层
 - 允许创建、重组、合并、拆分页面
 
-### `AGENT.md`
+### `AGENTS.md`
 
 - 保存维护规则、命名约定和操作流程
 - 作为后续 agent 的 schema 文件
@@ -113,13 +113,13 @@
 - 打开单个结果：`qmd get <file>[:line]`
 - 批量拉取结果：`qmd multi-get <pattern>`
 
-当前仓库使用工作区内的本地配置与索引：
+当前仓库使用仓库内的本地配置与索引：
 
-- `XDG_CONFIG_HOME=/Users/heleyang/Code/MyWiki/.config`
-- `XDG_CACHE_HOME=/Users/heleyang/Code/MyWiki/.cache`
-- 仓库包装脚本：`/Users/heleyang/Code/MyWiki/qmdw`
+- `XDG_CONFIG_HOME` 指向仓库内的 `.config/`
+- `XDG_CACHE_HOME` 指向仓库内的 `.cache/`
+- 仓库包装脚本：`./qmdw`
 - 默认镜像端点：`HF_ENDPOINT=https://hf-mirror.com`
-- 使用说明页：`/Users/heleyang/Code/MyWiki/wiki/qmdw.md`
+- 使用说明页：`wiki/qmdw.md`
 
 因此在当前仓库中调用 `qmd` 时，优先使用这两个环境变量，避免把本地索引写到用户目录。
 如果是人工在仓库里直接使用，优先调用 `./qmdw`，不要手写环境变量。

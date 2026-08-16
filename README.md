@@ -6,7 +6,7 @@
 
 - `raw/` 保存原始资料、导出稿、截图、附件
 - `wiki/` 保存整理后的知识页和导航页
-- `AGENT.md` 保存维护规则和知识库 schema
+- `AGENTS.md` 保存维护规则和知识库 schema
 - `qmdw` 提供仓库内固定配置的本地检索与 embedding 包装
 
 目标不是“存一堆 Markdown”，而是把资料沉淀成一个可检索、可回溯、可持续整理的本地 wiki。
@@ -15,7 +15,7 @@
 
 ```text
 .
-├── AGENT.md
+├── AGENTS.md
 ├── qmdw
 ├── raw/
 │   ├── assets/
@@ -47,7 +47,7 @@
 - 总入口：[wiki/index.md](wiki/index.md)
 - 维护日志：[wiki/log.md](wiki/log.md)
 - 检索说明：[wiki/qmdw.md](wiki/qmdw.md)
-- 维护规则：[AGENT.md](AGENT.md)
+- 维护规则：[AGENTS.md](AGENTS.md)
 
 ## 依赖
 
@@ -130,7 +130,7 @@
 - `wiki/` 下的页面应有 `summary` frontmatter
 - 结构变动要同步检查 `index.md`、`log.md`、`map.canvas`、`wiki.base`
 
-详细规则见 [AGENT.md](AGENT.md)。
+详细规则见 [AGENTS.md](AGENTS.md)。
 
 ## 说明
 

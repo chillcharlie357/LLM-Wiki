@@ -36,8 +36,8 @@ tags:
 - 合并 `wiki/llm/Agent/Agent.md` 与 `Agent面试文档（2026-2-23）.md`：保留 `Agent` 作为唯一入口页，将面试文档正文并入同一页面，给 `Agent` 增加旧标题 alias，清理首页里的重复入口，减少 Obsidian 文件树中的重复节点。
 - 调整 LLM 目录层级：保留 `wiki/llm/LLM.md` 作为目录页，将 `LLM 思维链.md` 和 `tokenizer.md` 归入 `wiki/llm/基础概念/`，并同步更新首页与 LLM 目录页的链接，减少 LLM 根层级的平铺条目。
 - 修复 `wiki/map.canvas` 中因笔记移动导致的坏节点：将 `tokenizer` 节点从旧路径 `wiki/llm/tokenizer.md` 更新为 `wiki/llm/基础概念/tokenizer.md`，并重新校验 canvas 中所有文件节点与连线引用，确保没有悬空节点和断边。
-- 将 [[raw/LLM Wiki|raw/LLM Wiki.md]] 的抽象模式整理为 [[wiki/Karpathy LLM Wiki]]，并在根目录新增 [[AGENT|AGENT.md]] 作为知识库维护 schema，固化三层结构、ingest/query/lint、日志与索引同步、空父页禁用等关键原则。
-- 接入 `qmd` 作为后续默认本地检索工具，并将其写入 `AGENT.md` 与 `Karpathy LLM Wiki` 页面，约定优先使用 `qmd query/search/get/multi-get` 在 `wiki/` 与 `raw/` 中定位相关内容。
+- 将 [[raw/LLM Wiki|raw/LLM Wiki.md]] 的抽象模式整理为 [[wiki/Karpathy LLM Wiki]]，并在根目录新增 [[AGENTS|AGENTS.md]] 作为知识库维护 schema，固化三层结构、ingest/query/lint、日志与索引同步、空父页禁用等关键原则。
+- 接入 `qmd` 作为后续默认本地检索工具，并将其写入 `AGENTS.md` 与 `Karpathy LLM Wiki` 页面，约定优先使用 `qmd query/search/get/multi-get` 在 `wiki/` 与 `raw/` 中定位相关内容。
 - 在工作区内完成 `qmd` 初始化：使用本地 `.config/qmd/index.yml` 与 `.cache/qmd/index.sqlite` 建立 `wiki` / `raw` 两个 collection，并确认 `qmd ls`、`qmd search`、`qmd get` 可在当前仓库内正常工作；同时将这些本地索引文件加入 `.gitignore`。
 - 增加仓库内包装脚本 `./qmdw`，统一为当前知识库注入本地 `qmd` config/cache 路径，避免后续每次手写 `XDG_CONFIG_HOME` / `XDG_CACHE_HOME`。
 - 为 `qmdw` 增加独立说明页 [[wiki/qmdw]]，集中记录它的职责、固定的配置/索引路径、常用命令、与直接运行 `qmd` 的区别，以及当前 embedding 相关限制；同时同步更新首页与维护约定中的入口。
@@ -48,12 +48,12 @@ tags:
 - 调整 `Agent` 目录结构：将 `Harness Engineering`、`Harness Engineering × SDD`、`OpenHarness`、`OpenClaw vs Claude Code vs Mem0` 四篇收纳到 `wiki/llm/Agent/Harness/` 子目录，保留独立页面但减少 `Agent/` 根层级平铺；同时同步更新首页、`Agent.md` 与 `Pi.md` 中的链接。
 - 生成 repo 内 skill [[skills/obsidian-wiki-maintainer/SKILL|obsidian-wiki-maintainer]]：把当前知识库维护流程整理成可复用的 Skill，覆盖创建 wiki、插入/更新内容、使用 `qmdw` 检索、以及 frontmatter / link / canvas / qmd 索引与 embedding 的 lint 流程。
 - 将 [[skills/obsidian-wiki-maintainer/SKILL|obsidian-wiki-maintainer]] 去项目绑定并改成可迁移版本：移除绝对路径、个人目录与仓库专属表述，改为先探测当前 vault 约定，再按通用的 create / ingest / retrieve / lint 流程执行；同时为 `qmdw` 提供 plain `qmd` 回退路径。
-- 为 [[skills/obsidian-wiki-maintainer/SKILL|obsidian-wiki-maintainer]] 补充标准模板与依赖说明：新增 `AGENT.md`、`index.md`、`log.md`、`qmdw`、`.config/qmd/index.yml` 模板，并明确该 skill 依赖 `obsidian` CLI 与 `qmd`，适合作为新 vault 的通用初始化骨架。
+- 为 [[skills/obsidian-wiki-maintainer/SKILL|obsidian-wiki-maintainer]] 补充标准模板与依赖说明：新增 `AGENTS.md`、`index.md`、`log.md`、`qmdw`、`.config/qmd/index.yml` 模板，并明确该 skill 依赖 `obsidian` CLI 与 `qmd`，适合作为新 vault 的通用初始化骨架。
 - 继续补齐 [[skills/obsidian-wiki-maintainer/SKILL|obsidian-wiki-maintainer]] 的 `raw/` 模板：新增 `raw/README.md` 说明 source archive 的职责、规则与建议目录结构，并增加 `raw/assets/.gitkeep` 作为附件目录占位。
 - 将 `raw/pi-agent/` 提炼为 `wiki/llm/Agent/Pi/` 主题目录：新增 `Pi.md` 与 `Pi 与 OpenClaw 集成架构.md`，把 Pi 的极简哲学、self-extension 思路、session tree、pi-mono 组件分层，以及 OpenClaw 的 embedded 集成方式整理进 wiki，并同步更新 `Agent.md`、`index.md` 与 `map.canvas` 导航。
 - 为 `Pi` 主题补充 Mermaid 可视化：在 `Pi.md` 中增加 `pi-mono` 代码架构图、自我扩展闭环图与 session 树工作流图；在 `Pi 与 OpenClaw 集成架构.md` 中增加嵌入式分层架构图、运行时序图与工具管线图，方便在 Obsidian 阅读视图里直接理解代码结构与执行路径。
 - 新增 [[skills/obsidian-wiki-maintainer/SKILL|obsidian-wiki-maintainer]] 的全局安装与一键初始化能力：补充 `scripts/install_global.sh` 用于安装到全局 skills 目录，并新增 `scripts/bootstrap_wiki.sh` 用于一键生成新 Obsidian wiki 的标准骨架、`qmdw` 包装脚本和本地 qmd 配置。
-- 调整 `bootstrap_wiki.sh` 的 `AGENT.md` 策略：如果目标项目已存在 `AGENT.md`，不再覆盖，而是在文件尾部追加一个带标记的 Obsidian wiki 维护区块；若该区块已存在，则跳过，避免重复写入。
+- 调整 `bootstrap_wiki.sh` 的 `AGENTS.md` 策略：如果目标项目已存在 `AGENTS.md`，不再覆盖，而是在文件尾部追加一个带标记的 Obsidian wiki 维护区块；若该区块已存在，则跳过，避免重复写入。
 - 为 `obsidian-wiki-maintainer` 增加首次使用依赖体检：新增 `scripts/check_dependencies.sh`，在 bootstrap 前检查 `obsidian`、`qmd`、Obsidian 安装版本，以及 macOS/Linux 下的 CLI 注册与 PATH 状态，并引用官方 CLI troubleshooting 作为诊断入口。
 
 ## 2026-04-22
@@ -62,11 +62,11 @@ tags:
 - 将原文封面图下载到 `raw/assets/weixin/vector-graph-rag/cover.webp`，同时把 raw 原文中的远程封面改为本地资源引用；其余微信导出中的 1x1 占位图未继续带入整理版页面。
 - 基于手动保存的 HTML 恢复 `Vector Graph RAG` 正文配图：从 HTML 中提取 10 张正文图并归档到 `raw/assets/weixin/vector-graph-rag/`，再按原文顺序替换 raw 原文中的 10 个占位图；整理版页面只保留正文中的信息图，不再使用头图、作者照片和尾部二维码。
 - 为 `wiki/` 下全部笔记补充 `summary` frontmatter 字段，并同步更新 `wiki.base`、skill 模板和 bootstrap 脚本，使新旧笔记的属性 schema 保持一致。
-- 更新 [[AGENT|AGENT.md]] 与 [[skills/obsidian-wiki-maintainer/SKILL|obsidian-wiki-maintainer]] 的维护规则，明确 `summary` 为标准 frontmatter 字段，并要求在新建、更新、lint 时一并维护。
+- 更新 [[AGENTS|AGENTS.md]] 与 [[skills/obsidian-wiki-maintainer/SKILL|obsidian-wiki-maintainer]] 的维护规则，明确 `summary` 为标准 frontmatter 字段，并要求在新建、更新、lint 时一并维护。
 - 将 `raw/weixin/Harness 架构与源码/` 目录下的 4 篇系列原文统一整理为 [[wiki/llm/Agent/Harness/Harness 架构与源码：运行时、联动与模式|wiki/llm/Agent/Harness/Harness 架构与源码：运行时、联动与模式.md]]，把 `Harness = 运行时控制层`、`LangGraph = 编排引擎层`、`LangChain = 组件层`、`middleware / 设计模式 = 扩展机制` 这条主线收敛成一页；同时删除散落在 `Agent/` 根目录下的单独 `LangChain 四大设计模式` 页面，并同步修正首页与 `Agent.md` 链接。
 - 基于 `raw/weixin/` 下更新后的 Markdown 原始稿重新生成微信来源笔记：回写 [[wiki/llm/Agent/Harness/Harness 架构与源码：运行时、联动与模式|wiki/llm/Agent/Harness/Harness 架构与源码：运行时、联动与模式.md]] 与 [[wiki/llm/RAG/Vector Graph RAG|wiki/llm/RAG/Vector Graph RAG.md]]，补充原始来源入口，并按新的 raw 内容收敛表述边界，避免继续引用旧 HTML 快照语境。
 - 将 `raw/weixin/` 下剩余远程图片批量下载到 `raw/assets/weixin/` 本地目录，并回写原始 Markdown 引用；同时移除 `Vector Graph RAG` 头图、`Harness` 系列中的封面/导流图，只保留与正文论述直接相关的信息图，避免 Obsidian 渲染继续依赖外链资源。
-- 扩展仓库包装脚本 [[qmdw]]，新增 `./qmdw sync` 统一执行 `update -> embed`；同时更新 [[wiki/qmdw|wiki/qmdw.md]] 与 [[AGENT|AGENT.md]]，明确资料变更后优先使用 `sync`，避免只跑 `embed` 导致索引和已删文件状态不同步。
+- 扩展仓库包装脚本 [[qmdw]]，新增 `./qmdw sync` 统一执行 `update -> embed`；同时更新 [[wiki/qmdw|wiki/qmdw.md]] 与 [[AGENTS|AGENTS.md]]，明确资料变更后优先使用 `sync`，避免只跑 `embed` 导致索引和已删文件状态不同步。
 - 为仓库根目录新增 [[README|README.md]]，集中说明 Obsidian wiki 的目录分层、主要入口、依赖、`qmdw` 的基本用法，以及 `raw -> wiki -> qmdw sync` 的日常维护流程，方便在 GitHub 和本地仓库入口快速建立上下文。
 
 ## 2026-04-23
@@ -74,7 +74,7 @@ tags:
 - 将 [[raw/weixin/2026 年做搜索就是做 Agent Memory.mhtml]] 解析为可检索的原始 Markdown [[raw/weixin/2026 年做搜索就是做 Agent Memory|2026 年做搜索就是做 Agent Memory.md]]，并从 MHTML 中抽取 18 张正文图到 `raw/assets/weixin/agent-memory/`；跳过头图、头像、二维码和微信界面资源。
 - 新增 [[wiki/llm/Agent/Memory/Agent Memory]]，将“2026 年做搜索就是做 Agent Memory”的核心观点整理为 Obsidian 笔记：搜索范式演进、query 构造失败案例、三种 source of truth、主流记忆工作流、小龙虾式文件记忆架构、选择性遗忘与本地 wiki 维护原则。
 - 修复 [[qmdw]] 在 macOS 下 `mktemp` 模板带后缀导致 `./qmdw sync` 中断的问题，并重新执行 `./qmdw sync`：`wiki` / `raw` 索引已更新，新增 5 个文档哈希对应的 56 个 chunks 已完成 embedding。
-- 更新 [[AGENT|AGENT.md]] 与 [[skills/obsidian-wiki-maintainer/SKILL|obsidian-wiki-maintainer]]，明确 `obsidian-markdown`、`obsidian-bases`、`obsidian-cli`、`json-canvas` 四类 Obsidian 技能的使用边界；同步修正 [[wiki/wiki.base]] 中已删除的基础 MOC 路径，并把 [[wiki/llm/Agent/Memory/Agent Memory]] 加入 [[wiki/map.canvas]]。
+- 更新 [[AGENTS|AGENTS.md]] 与 [[skills/obsidian-wiki-maintainer/SKILL|obsidian-wiki-maintainer]]，明确 `obsidian-markdown`、`obsidian-bases`、`obsidian-cli`、`json-canvas` 四类 Obsidian 技能的使用边界；同步修正 [[wiki/wiki.base]] 中已删除的基础 MOC 路径，并把 [[wiki/llm/Agent/Memory/Agent Memory]] 加入 [[wiki/map.canvas]]。
 - 执行 `obsidian-markdown` lint 后，将 [[wiki/llm/RAG/RAG 架构总结]] 与 [[wiki/llm/基础概念/LLM 思维链]] 中的 14 个远程正文图片下载到 `raw/assets/web/`，并改写为 Obsidian 本地 embed；随后运行 `./qmdw sync`，刷新 7 篇更新文档并完成 24 个 chunks 的 embedding。
 - 新增 [[wiki/llm/Agent/Pi/Pi SDK]]，基于官方 `pi-coding-agent` SDK、examples、extensions、packages 文档和本地 OpenClaw 集成材料，整理 `createAgentSession()`、`AgentSessionRuntime`、`DefaultResourceLoader`、tools、skills、extensions、session 管理和 OpenClaw 式 SDK 嵌入路线；同步更新 Pi 入口、Agent 入口、首页与 canvas，并通过 `./qmdw sync` 刷新新增页面和 58 个 embedding chunks。
 
@@ -124,3 +124,7 @@ tags:
 ## 2026-08-14（续二）
 
 - 为 [[wiki/llm/Agent/DeepSeek Harness 介绍与开发使用指南|DeepSeek Harness 介绍与开发使用指南]] 增补「10. 实战示例：从安装到运行到调试」一节：基于 `apps/cli/reference/README.md`、`docs/development.md`、根 `package.json`、`packages/preset/README.md`、`packages/skill/README.md`、`packages/boot/cmdline/README.md` 核对真实行为，给出 clone→凭据→build→起 Web→headless 任务→新 profile 装插件（`dsh plugin --profile … add …`，含 `allowBuilds`/bundle 自动调和）→`--dump-config`/`--dump-default-config` 装配诊断→`minimal` preset 极简对照→质量门/测试→调试信号与关闭行为（`SIGINT`/`SIGTERM`、`DSH_TOOLS_MODE`/`DSH_PERMISSION_MODE`/`DSH_TELEMETRY_MODE`、workspace-write 权限）的端到端 walkthrough；同步扩充参考来源清单。
+
+## 2026-08-16
+
+- 将根规则文件从旧单数命名迁移为标准 `AGENTS.md`，同步更新 README、首页和维护页面中的旧链接，并清理公开仓库中的本地绝对路径。

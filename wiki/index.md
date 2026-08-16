@@ -28,7 +28,7 @@ aliases:
 
 - `raw/`：原始资料、截图、PDF、导出内容
 - `wiki/`：整理后的知识页
-- `AGENT.md`：知识库维护规则与 schema
+- `AGENTS.md`：知识库维护规则与 schema
 - `wiki/index.md`：主题入口
 - `wiki/log.md`：迁移与维护日志
 
@@ -103,7 +103,7 @@ aliases:
 ## 维护约定
 
 - [[Karpathy LLM Wiki|karpathy LLM Wiki]]
-- [[AGENT]]
+- [[AGENTS]]
 - [[qmdw]]
 
 ## 结构化索引
