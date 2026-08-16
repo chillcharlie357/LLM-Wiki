@@ -15,18 +15,18 @@ EOF
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 "$SCRIPT_DIR/check_dependencies.sh" >/dev/null
 
-append_agent_block() {
-  local agent_file="$1"
+append_agents_block() {
+  local agents_file="$1"
   local wiki_root="$2"
   local source_root="$3"
   local marker_start="<!-- OBSIDIAN-WIKI-MAINTENANCE:START -->"
   local marker_end="<!-- OBSIDIAN-WIKI-MAINTENANCE:END -->"
 
-  if grep -Fq "$marker_start" "$agent_file"; then
+  if grep -Fq "$marker_start" "$agents_file"; then
     return 0
   fi
 
-  cat >> "$agent_file" <<EOF
+  cat >> "$agents_file" <<EOF
 
 $marker_start
 ## Obsidian Wiki Maintenance
@@ -62,7 +62,7 @@ SOURCE_ROOT="${4:-raw}"
 mkdir -p "$TARGET_DIR"
 TARGET_DIR="$(cd "$TARGET_DIR" && pwd)"
 
-AGENT_FILE="$TARGET_DIR/AGENT.md"
+AGENTS_FILE="$TARGET_DIR/AGENTS.md"
 INDEX_FILE="$TARGET_DIR/$WIKI_ROOT/index.md"
 LOG_FILE="$TARGET_DIR/$WIKI_ROOT/log.md"
 RAW_README="$TARGET_DIR/$SOURCE_ROOT/README.md"
@@ -85,10 +85,10 @@ mkdir -p \
   "$TARGET_DIR/.config/qmd" \
   "$TARGET_DIR/.cache/qmd"
 
-if [[ -e "$AGENT_FILE" ]]; then
-  append_agent_block "$AGENT_FILE" "$WIKI_ROOT" "$SOURCE_ROOT"
+if [[ -e "$AGENTS_FILE" ]]; then
+  append_agents_block "$AGENTS_FILE" "$WIKI_ROOT" "$SOURCE_ROOT"
 else
-  cat > "$AGENT_FILE" <<EOF
+  cat > "$AGENTS_FILE" <<EOF
 <!-- Obsidian wiki maintenance contract template -->
 
 # $VAULT_NAME Maintenance Guide

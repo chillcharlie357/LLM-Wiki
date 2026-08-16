@@ -42,7 +42,7 @@ Adapt to the current vault first. If the vault already has conventions, preserve
 
 This skill ships with reusable templates:
 
-- [`templates/AGENT.md`](templates/AGENT.md) for the vault maintenance contract
+- [`templates/AGENTS.md`](templates/AGENTS.md) for the project-wide agent maintenance contract
 - [`templates/raw/README.md`](templates/raw/README.md) for the source archive contract
 - [`templates/raw/assets/.gitkeep`](templates/raw/assets/.gitkeep) to preserve the local attachments directory
 - [`templates/wiki/index.md`](templates/wiki/index.md) for the navigation page
@@ -59,7 +59,7 @@ Use placeholders such as `{{VAULT_NAME}}`, `{{WIKI_ROOT}}`, and `{{SOURCE_ROOT}}
 - [`scripts/bootstrap_wiki.sh`](scripts/bootstrap_wiki.sh) initializes a new Obsidian wiki with the standard structure, templates, and local `qmdw` wrapper
 
 Use the bootstrap script when setting up a new vault from scratch instead of copying files manually.
-If the target already has an `AGENT.md`, the bootstrap script appends a dedicated Obsidian wiki maintenance block instead of overwriting the file.
+The bootstrap script uses the standard project instruction filename `AGENTS.md`. If the target already has an `AGENTS.md`, it appends a dedicated Obsidian wiki maintenance block instead of overwriting the file.
 
 ## Detect Before Editing
 
@@ -200,6 +200,7 @@ If you move or rename notes, always lint before considering the task complete.
 
 ## Non-Negotiable Rules
 
+- Use `AGENTS.md`, never the legacy singular `AGENT.md`, for project agent instructions.
 - Do not create empty parent pages just to mimic Notion nesting.
 - Prefer directory structure over duplicate “jump” notes.
 - Treat the source archive as source material, not as the curated reading layer.

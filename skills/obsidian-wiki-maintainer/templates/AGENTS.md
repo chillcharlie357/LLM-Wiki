@@ -1,4 +1,4 @@
-<!-- Obsidian wiki maintenance contract template -->
+<!-- Standard AGENTS.md Obsidian wiki maintenance contract template -->
 
 # {{VAULT_NAME}} Maintenance Guide
 
