@@ -7,6 +7,7 @@ note_type: topic
 area: backend
 topic: go
 collection: backend
+parent_note: "[[wiki/backend/后端]]"
 status: seed
 migrated_on: '2026-04-20'
 tags:
