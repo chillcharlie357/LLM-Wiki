@@ -16,7 +16,7 @@
 		{"id":"b100000000000014","type":"file","file":"wiki/llm/Agent/Agent 业务理解与意图识别.md","x":380,"y":780,"width":300,"height":160},
 		{"id":"b100000000000015","type":"file","file":"wiki/llm/Agent/Agent Skill 设计与质量保障.md","x":740,"y":780,"width":300,"height":160},
 		{"id":"b100000000000016","type":"file","file":"wiki/llm/RAG/RAG 项目优化与面试回答框架.md","x":40,"y":780,"width":260,"height":160},
-		{"id":"b100000000000004","type":"file","file":"wiki/llm/模型训练/Flash Attention.md","x":40,"y":300,"width":280,"height":180},
+		{"id":"b100000000000004","type":"text","text":"## 模型训练","x":40,"y":300,"width":280,"height":180},
 		{"id":"c100000000000001","type":"file","file":"wiki/backend/后端.md","x":1440,"y":40,"width":260,"height":160},
 		{"id":"c100000000000003","type":"file","file":"wiki/backend/Java.md","x":1440,"y":270,"width":260,"height":160},
 		{"id":"c100000000000002","type":"file","file":"wiki/backend/Go.md","x":1760,"y":40,"width":260,"height":160},
